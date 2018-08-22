@@ -1,18 +1,8 @@
-### Le lien de notre belle app Heroku: <https://pimpmyresto.herokuapp.com/>
-
-### Le lien de la presentation video:  <http://bitly.com/2PE8I4H>
-
-## Et voici notre superbe équipe
-
-| Noms              | Pseudo Slack                   |
-| ----------------- | ------------------------------ |
-| Pauline Labaisse  | @Pauline Labaisse :baby_chick: |
-| Irina Penkovskaia | @Ira P. :octocat:              |
-| Victor Gabella    | @Victorhebdo :bear:                |
-
-_Enjoy_
+### Le lien de Heroku: <https://pimpmyresto.herokuapp.com/>
 
 ### PimpMyResto
+
+46 % des Français souhaiteraient que les restaurants « classiques » proposent des plats vegan (sondage CHD EXPERT-2016). Il est donc primordial d'exposer aux futurs professionnels de la restauration toute l’importance de s’adapter aux nouvelles habitudes de consommation.
 
 L’objectif de ce projet est de développer une plateforme d'agrégation de demandes du public qui possède un régime alimentaire spécial (intolérances, allergies, végétariens/vegans, etc.) pour faire évoluer l’offre des restaurants.
 
