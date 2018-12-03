@@ -1,3 +1,10 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get '/', to: 'home#home'
+  get '/browse', to: 'home#browse'
+  get '/pimped', to: 'home#pimped'
+  
+  get '/resto', to: 'step_page#resto'
+  get '/survey', to: 'step_page#survey'
+  get '/foodstyle', to: 'step_page#foodstyle'
+
 end
