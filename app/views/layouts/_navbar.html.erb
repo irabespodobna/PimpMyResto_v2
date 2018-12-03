@@ -1,21 +1,22 @@
-<nav class="navbar navbar-dark bg-dark">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="home.scss">
+</head>
 
-  <div class="site-name">
-    <td> <%= link_to "Take Action", survey_path%></td>
-  </div>
-  <div class="site-name">
-    <td> <%= link_to "Browse", browse_path%></td>
-  </div>
-  <div class="site-name">
-    <td> <%= link_to "Pimped", pimped_path%></td>
-  </div>
 
-  <div class="singup">
-    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-    <p><%='Sing Up' %></p>
-    <p><%= 'Sing In' %></p>
-  </div>
+<nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#"><%= link_to "Take Action", survey_path%></a>
+      <a class="navbar-brand" href="#"><%= link_to "Browse", browse_path%></a>
+      <a class="navbar-brand" href="#"><%= link_to "Pimped", pimped_path%></a>
 
-</div>
+    </nav>
 
+
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#"><%='Sing Up' %></a>
+      <a class="navbar-brand" href="#"><%= 'Sing In' %></a>
+      
 </nav>
