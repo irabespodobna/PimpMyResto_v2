@@ -18,6 +18,8 @@
 //= require turbolinks
 //= require_tree .
 
+
+// CAROUSSEL
 jQuery(document).ready(function($){
 	var $form_modal = $('.cd-user-modal'),
 		$form_login = $form_modal.find('#cd-login'),
@@ -169,3 +171,8 @@ jQuery.fn.putCursorAtEnd = function() {
 jQuery('#cody-info ul li').eq(1).on('click', function(){
 $('#cody-info').hide();
 });
+
+// STEPPER
+$(document).ready(function () {
+ $('.stepper').mdbStepper();
+})
