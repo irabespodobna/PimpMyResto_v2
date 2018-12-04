@@ -1,11 +1,13 @@
-<%= render 'layouts/navbar' %>
+
 
 <!DOCTYPE html>
-<html>
-  <head>
-    <title></title>
-  </head>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="home.scss">
+</head>
   <body>
+<%= render 'layouts/navbar' %>
 
     <ul>
       <% if user_signed_in? %>
@@ -23,4 +25,11 @@
       <% end %>
     </ul>
 
-  </body>
+<%= render 'layouts/caroussel' %>
+<!-- Button -->
+<div id="button">
+  <button type="button" class="btn btn-outline-info" onclick="window.location.href='/survey'">Let's create a survey!</button>
+</div>
+
+</body>
+
