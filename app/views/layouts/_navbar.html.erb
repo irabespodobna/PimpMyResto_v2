@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="home.scss">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="home.scss">
+  </head>
 
-
-<nav class="navbar navbar-light bg-light">
+  <nav class="navbar navbar-light bg-light">
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="#"><%= link_to "Take Action", survey_path%></a>
       <a class="navbar-brand" href="#"><%= link_to "Browse", browse_path%></a>
       <a class="navbar-brand" href="#"><%= link_to "Pimped", pimped_path%></a>
-
     </nav>
 
-
     <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#"><%='Sing Up' %></a>
-      <a class="navbar-brand" href="#"><%= 'Sing In' %></a>
-</nav>
+      <a class="navbar-brand" href="#"><%= link_to "Sign up", new_user_registration_path %></a>
+      <a class="navbar-brand" href="#"><%= link_to "Sign in", new_user_session_path %></a>
+    </nav>
 
+  </nav>
+  <ul>
+    <% if user_signed_in? %>
+      <p>Coucou, <%= current_user.email %>!</p>
+      <p><%= button_to "Sign out", destroy_user_session_path, :method => :delete %></p>
+    <% end %>
+  </ul>

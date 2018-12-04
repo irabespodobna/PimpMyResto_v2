@@ -1,35 +1,14 @@
-
-
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="home.scss">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="home.scss">
+  </head>
   <body>
-<%= render 'layouts/navbar' %>
+    <!-- Button -->
+    <div id="button">
+      <button type="button" class="btn btn-outline-info" onclick="window.location.href='/survey'">Let's create a survey!</button>
+    </div>
+    <%= render 'layouts/caroussel' %>
 
-    <ul>
-      <% if user_signed_in? %>
-        <li>
-          <%= button_to "Sign Out", destroy_user_session_path, :method => :delete %>
-        </li>
-        <%= current_user.email %>
-      <% else %>
-        <li>
-          <%= link_to "Sign In", new_user_session_path %>
-        </li>
-        <li>
-          <%= link_to "Sign Up", new_user_registration_path %>
-        </li>
-      <% end %>
-    </ul>
-
-<%= render 'layouts/caroussel' %>
-<!-- Button -->
-<div id="button">
-  <button type="button" class="btn btn-outline-info" onclick="window.location.href='/survey'">Let's create a survey!</button>
-</div>
-
-</body>
-
+  </body>
