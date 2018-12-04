@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   get '/survey', to: 'step_page#survey'
   get '/foodstyle', to: 'step_page#foodstyle'
 
+  
+
 end
