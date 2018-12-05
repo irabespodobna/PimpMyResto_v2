@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  get 'restos/create'
+  post 'restos/create', to: 'restos#create'
   get 'restos', to: 'restos#index'
+
   devise_for :users
   get '/', to: 'home#home'
   get '/browse', to: 'home#browse'

@@ -1,2 +1,0 @@
-class Surveymeal < ApplicationRecord
-end

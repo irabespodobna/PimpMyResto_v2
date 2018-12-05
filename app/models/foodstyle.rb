@@ -1,2 +1,0 @@
-class Foodstyle < ApplicationRecord
-end
