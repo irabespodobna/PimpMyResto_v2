@@ -8,7 +8,7 @@ class SurveyController < ApplicationController
   end
 
   def create
-    puts "here are params #{params[:foodstyle_category_id]}"
+    Survey.create foodstyle_category_id: params[:foodstyle_category_id]
     redirect_to "/survey/index"
   end
 
