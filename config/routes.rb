@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'restos/create'
   post 'restos/create', to: 'restos#create'
   get 'restos', to: 'restos#index'
+  get 'restos/:id', to: 'restos#show'
 
   devise_for :users
   get '/', to: 'home#home'

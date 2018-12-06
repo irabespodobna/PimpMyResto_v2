@@ -2,5 +2,5 @@
 <p>List of restos
 </p>
 <% @the_restos.each do |resto|  %>
-  <p><%= resto.name %> -- <%= resto.address %></p>
+  <p><a href="/restos/<%= resto.id %>"><%= resto.name %></a></p> -- <%= resto.address %></p>
 <% end %>
