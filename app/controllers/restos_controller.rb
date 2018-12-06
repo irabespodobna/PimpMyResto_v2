@@ -10,5 +10,8 @@ class RestosController < ApplicationController
 
   def show
     @resto = Resto.find(params[:id])
+    @surveys = @resto.surveys
+    @num_votes = @surveys.size
+
   end
 end

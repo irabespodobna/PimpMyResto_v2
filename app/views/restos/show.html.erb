@@ -1,2 +1,12 @@
 <h1>Bienvenu to <%= @resto.name %>, FDP</h1>
+
+<p>There are <%= @num_votes %> votes about <%= @resto.name %> :
+  <% @surveys.each do |survey|  %>
+    <p>
+      <%= survey.resto.name %>
+      --
+      <%= survey.foodstyle_category.name %>
+    </p>
+  <% end %>
+</p>
 <p><a href="/restos">Retourner à l’index</a></p>
