@@ -1,6 +1,7 @@
-
 <p>List of surveys
 </p>
 <% @surveys.each do |survey|  %>
-  <p><%= survey.foodstyle_category_id %></p>
+  <p>
+        <%= survey.resto.name %> --  <%= survey.foodstyle_category.name %>
+  </p>
 <% end %>
