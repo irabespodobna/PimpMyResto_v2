@@ -1,10 +1,7 @@
 class StepPageController < ApplicationController
-	def resto
-	end
+  def resto; end
 
-	def survey
-	end
+  def survey; end
 
-	def foodstyle
-	end
+  def foodstyle; end
 end

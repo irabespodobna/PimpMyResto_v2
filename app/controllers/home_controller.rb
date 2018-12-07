@@ -1,10 +1,7 @@
 class HomeController < ApplicationController
-    def home
-    end
+  def home; end
 
-    def browse
-    end
+  def browse; end
 
-    def pimped
-    end
+  def pimped; end
 end

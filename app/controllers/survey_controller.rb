@@ -13,5 +13,4 @@ class SurveyController < ApplicationController
     puts "/restos/#{params[:id]}"
     redirect_to "/restos/#{params[:id]}"
   end
-
 end

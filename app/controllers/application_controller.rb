@@ -1,4 +1,3 @@
 class ApplicationController < ActionController::Base
-  def show
-  end
+  def show; end
 end
