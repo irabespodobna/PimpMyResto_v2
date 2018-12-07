@@ -1,12 +1,26 @@
-/*button css */
-
-.button {
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 10px 0;
-  align-items: center;
-  justify-content: space-around;
+.image-content {
   display: flex;
-  float: none;
-  color: black;
+  float: left;
+  align-items: center;
+  justify-content: center;
+  width: 75%;
+  height: auto;
+  margin: 0;
+}
+
+.content_img {
+  width: 1000px;
+  height: 200px;
+}
+
+/*button css */
+.button {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 10px 0;
+	align-items: center;
+	justify-content: space-around;
+	display: flex;
+	float: none;
+	color: black;
 }
