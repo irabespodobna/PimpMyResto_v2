@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <script type="text/javascript" src="application.js"></script>
-    <h1>Bienvenue to <%= @resto.name %>, FDP</h1>
+    <h1>Bienvenue to <%= @resto.name %></h1>
   </head>
 
   <body>
@@ -11,11 +11,6 @@
       <p> <%= @num_vegan_votes  %> voted for a vegan option! </p>
       <p> <%= @num_veggie_votes  %> voted for a veggie option! </p>
       <p> <%= @num_gluten_votes  %> voted for a gluten option! </p>
-      <% @surveys.each do |survey|  %>
-      <p>
-        <%= survey.resto.name %> -- <%= survey.foodstyle_category.name %>
-      </p>
-      <% end %>
 
       <h3>Interested? Vote yourself for a new option at <%= @resto.name %></h3>
       <%= form_tag "/restos/#{params[:id]}", method: 'post' do %>
