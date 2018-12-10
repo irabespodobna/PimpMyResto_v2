@@ -56,10 +56,10 @@
 
 
 
-<div class="progress">
-    <div class="progress-bar" role="progressbar" style="width: <%= task_completion_vegan %>%" aria-valuenow="<%= task_completion_vegan %>" aria-valuemin="0" aria-valuemax="100" > <%= @num_vegan_votes %></div>
-    <div class="progress-bar bg-success" role="progressbar" style="width: <%= task_completion_veggie%>%" aria-valuenow="<%= task_completion_veggie %>" aria-valuemin="0" aria-valuemax="100"><%= @num_veggie_votes %></div>
-    <div class="progress-bar bg-info" role="progressbar" style="width: <%= task_completion_gluten%>%" aria-valuenow="<%= task_completion_gluten %>" aria-valuemin="0" aria-valuemax="100" ><%= @num_gluten_votes %></div>
+<div class="progress" style="height:120px; margin-left:10%; margin-right:10%;">
+    <div class="progress-bar" role="progressbar" style="writing-mode:vertical-rl; text-orientation:sideways; width: <%= task_completion_vegan %>%" aria-valuenow="<%= task_completion_vegan %>" aria-valuemin="0" aria-valuemax="100" > <%= @num_vegan_votes %> Vegans</div>
+    <div class="progress-bar bg-success" role="progressbar" style="writing-mode:vertical-rl; text-orientation:sideways; width: <%= task_completion_veggie%>%" aria-valuenow="<%= task_completion_veggie %>" aria-valuemin="0" aria-valuemax="100"><%= @num_veggie_votes %> Veggies</div>
+    <div class="progress-bar bg-danger" role="progressbar" style="writing-mode:vertical-rl; text-orientation:sideways; width: <%= task_completion_gluten%>%" aria-valuenow="<%= task_completion_gluten %>" aria-valuemin="0" aria-valuemax="100" ><%= @num_gluten_votes %> Glutens</div>
 </div>
 
 <p>Votre vote fait parti des <%= task_completion %>% de gens ayant vote avec vous =]</p>
