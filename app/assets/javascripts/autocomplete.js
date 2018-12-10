@@ -10,8 +10,16 @@ function initializeAutocomplete(id) {
   function onPlaceChanged() {
     var place = this.getPlace();
 
-     console.log(place);  // view the full object returned by Google API.
+     console.log(place);
+     console.log(place.name);
+     console.log(place.place_id);
 
+     var type_element = document.getElementById('place_id');
+     if (type_element) {
+       type_element.value = place.place_id;
+       console.log('Replace place id in documewnt!')
+     }
+    
     for (var i in place.address_components) {
       var component = place.address_components[i];
       for (var j in component.types) {  // Some types are ["country", "political"]
