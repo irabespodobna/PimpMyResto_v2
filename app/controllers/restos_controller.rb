@@ -5,6 +5,7 @@ class RestosController < ApplicationController
 
   def create
     Resto.create name: params[:resto_name], address: params[:resto_address]
+    
   end
 
   def show

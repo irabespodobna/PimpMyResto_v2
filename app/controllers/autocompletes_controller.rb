@@ -25,7 +25,6 @@ class AutocompletesController < ApplicationController
   # POST /autocompletes.json
   def create
     @autocomplete = Autocomplete.new(autocomplete_params)
-
     respond_to do |format|
       if @autocomplete.save
         format.html { redirect_to @autocomplete, notice: 'Autocomplete was successfully created.' }
