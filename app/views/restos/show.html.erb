@@ -47,3 +47,20 @@
 <p>
   <a href="/restos">Retourner à l’index</a>
 </p>
+
+
+<% task_completion = (@num_votes.to_f / 250) * 100 %>
+<% task_completion_vegan = (@num_vegan_votes.to_f / 250) * 100 %>
+<% task_completion_veggie = (@num_veggie_votes.to_f / 250) * 100 %>
+<% task_completion_gluten = (@num_gluten_votes.to_f / 250) * 100 %>
+
+
+
+<div class="progress">
+    <div class="progress-bar" role="progressbar" style="width: <%= task_completion_vegan %>%" aria-valuenow="<%= task_completion_vegan %>" aria-valuemin="0" aria-valuemax="100" > <%= @num_vegan_votes %></div>
+    <div class="progress-bar bg-success" role="progressbar" style="width: <%= task_completion_veggie%>%" aria-valuenow="<%= task_completion_veggie %>" aria-valuemin="0" aria-valuemax="100"><%= @num_veggie_votes %></div>
+    <div class="progress-bar bg-info" role="progressbar" style="width: <%= task_completion_gluten%>%" aria-valuenow="<%= task_completion_gluten %>" aria-valuemin="0" aria-valuemax="100" ><%= @num_gluten_votes %></div>
+</div>
+
+<p>Votre vote fait parti des <%= task_completion %>% de gens ayant vote avec vous =]</p>
+<p>Au total, il y a <%= @num_votes %>/250 realises a ce jour !</p>
