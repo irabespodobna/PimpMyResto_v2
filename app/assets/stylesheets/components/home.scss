@@ -1,22 +1,31 @@
+
 header{
  background: url(vegan.jpg) no-repeat center center / cover;
  height: 100%;
  width: 100%;
- opacity:0.50;
+  margin: 0; 
+  padding-top: 10px;
+  height: 100%; 
+  overflow: hidden;
+}
+
+.text{
+	position: absolute;
+	text-align: center;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: Andale Mono;
+	font-style: bold;
+}
+
+p{
+	position: absolute;
+	text-align: justify;
 }
 
 #button{
 	text-align:center;
 	margin:auto;
-	padding: 70px;
+	padding: 520px;
 }
-
-.text{
-	position: absolute;
-	top: 60%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-
-
-}
-
