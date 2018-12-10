@@ -72,3 +72,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'dotenv-rails'
 
 gem 'google_places'
+gem "geocoder"
+gem "figaro"
+gem 'jquery-rails'
+gem 'materialize-sass', '~> 1.0.0.alpha4'

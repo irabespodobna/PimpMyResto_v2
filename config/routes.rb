@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :autocompletes
+  root to: 'autocompletes#new'
   get 'restos/create'
   post 'restos/create', to: 'restos#create'
   get 'restos', to: 'restos#index'
