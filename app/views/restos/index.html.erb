@@ -1,6 +1,10 @@
-<h1>Restos#index</h1>
-<p>List of restos
-</p>
-<% @the_restos.each do |resto|  %>
-  <p><a href="/restos/<%= resto.id %>"><%= resto.name %></a></p> -- <%= resto.address %></p>
+<h1>List of restos</h1>
+<p>
+  <% @the_restos.each do |resto|  %>
+    <p>
+      <a href="/restos/<%= resto.id %>"><%= resto.name %></a>
+    </p>
+    --
+    <%= resto.address %></p>
 <% end %>
+</p>

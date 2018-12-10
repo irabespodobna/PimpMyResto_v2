@@ -16,7 +16,7 @@ class RestosController < ApplicationController
     @surveys = @resto.surveys
     @num_votes = @surveys.size
 
-    # To count a number of votes for vegan/veggie/without_gluten option
+    # To count a number of votes for vegan/veggie/without_gluten options
     vegan_id = 1
     veggie_id = 2
     without_gluten_id = 3
@@ -24,6 +24,7 @@ class RestosController < ApplicationController
     @num_vegan_votes = 0
     @num_veggie_votes = 0
     @num_gluten_votes = 0
+
     @surveys.each do |survey|
       if survey.foodstyle_category_id == vegan_id
         @num_vegan_votes += 1
