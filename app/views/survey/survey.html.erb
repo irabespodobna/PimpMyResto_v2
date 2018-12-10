@@ -6,6 +6,18 @@
   </head>
 
   <body>
+    <%= @print_restos %>
+
+    <form>
+      <p><br>Choose your resto</br></p>
+      <label>Name</label>
+      <input id="name" name="name" placeholder="Name">
+      <label>Address</label>
+      <input id="address_components" placeholder="Address">
+      <input type="submit" value="Submit"/>
+    </form>
+
+
     <%= form_tag '/survey', method: 'post' do %>
     <select name="resto_id">
       <% @the_restos.each do |resto| %>
