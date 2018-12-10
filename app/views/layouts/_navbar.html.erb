@@ -5,19 +5,18 @@
     <link rel="stylesheet" type="text/css" href="home.scss">
   </head>
 
-  <nav class="navbar navbar-light bg-light">
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#"><%= link_to "Take Action", survey_path%></a>
-      <a class="navbar-brand" href="#"><%= link_to "Browse", restos_path%></a>
-      <a class="navbar-brand" href="#"><%= link_to "Pimped", pimped_path%></a>
-    </nav>
 
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#"><%= link_to "Sign up", new_user_registration_path %></a>
-      <a class="navbar-brand" href="#"><%= link_to "Sign in", new_user_session_path %></a>
-    </nav>
 
-  </nav>
+<div class="topnav">
+  <a><%= link_to "Take Action", survey_path%></a>
+  <a> <%= link_to "Browse", restos_path%></a>
+  <a><%= link_to "Pimped", pimped_path%></a>
+    <div class='sign'>
+      <a><%= link_to "Sign up", new_user_registration_path %></a>
+      <a><%= link_to "Sign in", new_user_session_path %></a>
+  </div>
+</div>
+
   <ul>
     <% if user_signed_in? %>
       <p>Coucou, <%= current_user.email %>!</p>

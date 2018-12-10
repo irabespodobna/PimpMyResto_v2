@@ -1,0 +1,24 @@
+.footer {
+	opacity: .65;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #e8e6e6;
+  padding: 7px 20px;
+  font-size: 13px;
+}
+
+a {
+	float: right;
+	text-align: center;
+	padding: .5em;
+	color : #7a97dc;
+
+}
+
+.footer a:hover {
+	text-decoration: none;
+  background-color: #eff3f3;
+  color: #0855fa;
+}
