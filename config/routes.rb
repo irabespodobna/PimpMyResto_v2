@@ -9,11 +9,8 @@ Rails.application.routes.draw do
   get '/', to: 'home#home'
   get '/browse', to: 'home#browse'
   get '/pimped', to: 'home#pimped'
-
-  get '/resto', to: 'step_page#resto'
   get '/survey', to: 'survey#survey'
   get '/survey/index', to: 'survey#index'
   post '/survey', to: 'survey#create'
-  get '/foodstyle', to: 'step_page#foodstyle'
   post '/foodstyle', to: 'survey#survey_post'
 end
