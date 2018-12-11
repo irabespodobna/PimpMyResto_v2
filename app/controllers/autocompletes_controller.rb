@@ -14,7 +14,7 @@ class AutocompletesController < ApplicationController
 
   # GET /autocompletes/new
   def new
-    @autocomplete = Autocomplete.new
+    @autocomplete = Resto.new
   end
 
   # GET /autocompletes/1/edit
@@ -24,16 +24,8 @@ class AutocompletesController < ApplicationController
   # POST /autocompletes
   # POST /autocompletes.json
   def create
-    @autocomplete = Autocomplete.new(autocomplete_params)
-    respond_to do |format|
-      if @autocomplete.save
-        format.html { redirect_to @autocomplete, notice: 'Autocomplete was successfully created.' }
-        format.json { render :show, status: :created, location: @autocomplete }
-      else
-        format.html { render :new }
-        format.json { render json: @autocomplete.errors, status: :unprocessable_entity }
-      end
-    end
+    a = Resto.create name: params[:place_name], googleid: params[:place_id]
+    puts "#{a.errors}"
   end
 
   # PATCH/PUT /autocompletes/1

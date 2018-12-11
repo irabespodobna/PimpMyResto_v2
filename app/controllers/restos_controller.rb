@@ -4,8 +4,8 @@ class RestosController < ApplicationController
   end
 
   def create
-    Resto.create name: params[:resto_name], address: params[:resto_address]
-    
+    Resto.create name: params[:resto_name], googleid: params[:googleid]
+
   end
 
   def show

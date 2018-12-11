@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'restos/create'
   post 'restos/create', to: 'restos#create'
   get 'restos', to: 'restos#index'
+  post 'restos', to: 'autocompletes#create'
   get 'restos/:id', to: 'restos#show'
   post 'restos/:id', to: 'survey#create'
 
