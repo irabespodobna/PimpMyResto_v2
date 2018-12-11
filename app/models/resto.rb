@@ -4,4 +4,5 @@ class Resto < ApplicationRecord
   validates :name, uniqueness: { message: "Ce nom existe déjà." }
   validates :address, presence: { message: "Vous devriez mettre une adresse pour le restaurant." }
   validates :googleid, presence: { message: "There should be a Google ID" }
+  validates :googleid, uniqueness: { message: "Google id should be unique." }
 end
