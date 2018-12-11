@@ -17,7 +17,7 @@
   <ul class="user">
     <% if user_signed_in? %>
     <div class="txt_devise"></div>
-      <p class="btn "><%= button_to "Sign out", destroy_user_session_path, :method => :delete %></p>
+      <p class=" "><%= button_to "Sign out", destroy_user_session_path, :method => :delete %></p>
       <% else %>
       <div class='sign'>
       <a><%= link_to "Sign up", new_user_registration_path %></a>
