@@ -21,6 +21,27 @@
   color: #0855fa;
 }
 
+.user{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
 .sign{
 	float:right;
+}
+
+.text_devise{
+  display:flex;
+  flex-direction: row;
+justify-content: flex-end;
+}
+
+.user{
+  float:right;
+  text-align: center;
 }

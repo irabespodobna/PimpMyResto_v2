@@ -11,15 +11,19 @@
   <a><%= link_to "Take Action", survey_path%></a>
   <a> <%= link_to "Browse", restos_path%></a>
   <a><%= link_to "Pimped", pimped_path%></a>
-    <div class='sign'>
+    
+
+
+  <ul class="user">
+    <% if user_signed_in? %>
+    <div class="txt_devise"></div>
+      <p>Coucou, <%= current_user.email %>!</p>
+      <p class="btn "><%= button_to "Sign out", destroy_user_session_path, :method => :delete %></p>
+      <% else %>
+      <div class='sign'>
       <a><%= link_to "Sign up", new_user_registration_path %></a>
       <a><%= link_to "Sign in", new_user_session_path %></a>
   </div>
-</div>
-
-  <ul>
-    <% if user_signed_in? %>
-      <p>Coucou, <%= current_user.email %>!</p>
-      <p><%= button_to "Sign out", destroy_user_session_path, :method => :delete %></p>
     <% end %>
   </ul>
+</div>
