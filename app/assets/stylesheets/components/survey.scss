@@ -1,0 +1,71 @@
+
+/* RESTO DROPDOWN */
+.resto select {
+   border: 0;
+   color: #b0b2b2;
+   background: #f4bdff;
+   font-size: 20px;
+   font-weight: bold;
+   padding: 2px 10px;
+   width: 240px;
+   *width: 280px;
+   *background: #b1d6ff;
+   -webkit-appearance: none;
+   display: inline;
+   float: right;
+   margin-right: 400px;
+}
+
+.resto label{
+	display: inline;
+	float: left;
+	margin-left: 400px
+}
+
+/* PREFERENCES DROPDOWN */
+.prefer select {
+   border: 0;
+   color: #b0b2b2;
+   background: #feb8be;
+   font-size: 20px;
+   font-weight: bold;
+   padding: 2px 10px;
+   width: 240px;
+   *width: 280px;
+   *background: #b1d6ff;
+   -webkit-appearance: none;
+    display: inline;
+   float: right;
+   margin-right: 400px;
+}
+
+.prefer label{
+	display: inline;
+	float: left;
+	margin-left: 400px
+}
+
+/* MEAL CATEGORY DROPDOWN */
+.foodstyle select {
+   border: 0;
+   color: #b0b2b2;
+   background: #ffdec9;
+   font-size: 20px;
+   font-weight: bold;
+   padding: 2px 10px;
+   width: 240px;
+   *width: 280px;
+   *background: #b1d6ff;
+   -webkit-appearance: none;
+   display: inline;
+   float: right;
+   margin-right: 400px;
+}
+
+.foodstyle label{
+	display: inline;
+	float: left;
+	margin-left: 400px
+}
+
+

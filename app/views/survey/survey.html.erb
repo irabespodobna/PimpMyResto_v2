@@ -7,6 +7,7 @@
 
   <body>
     
+  <div class="resto">
     <label for="">Restaurant</label>
     <%= form_tag '/survey', method: 'post' do %>
     <select name="resto_id">
@@ -14,20 +15,25 @@
         <option value="<%= resto.id %>"><%= resto.name %></option>
       <% end %>
     </select>
+  </div>
 
+  <div class="prefer">
     <label for="">Preferences</label>
     <select name="foodstyle_category_id">
       <% @foodstyle_categories.each do |category| %>
         <option value="<%= category.id %>"><%= category.name %></option>
       <% end %>
     </select>
-
-    <label for="">Repas</label>
-    <select name="meal_category_id">
-      <% @meal_categories.each do |category| %>
-        <option value="<%= category.id %>"><%= category.name %></option>
-      <% end %>
-    </select>
+   </div>
+    
+  <div class="foodstyle">
+         <label for="">Repas</label>
+        <select name="meal_category_id">
+          <% @meal_categories.each do |category| %>
+            <option value="<%= category.id %>"><%= category.name %></option>
+            <% end %>
+        </select>
+  </div>
 
     <label for="">Budget</label>
     <select name="budget_category_id">
