@@ -3,8 +3,23 @@ class RestosController < ApplicationController
     @the_restos = Resto.all
   end
 
+  def search
+    @resto = Resto.new
+  end
+
   def create
-    Resto.create name: params[:resto_name], address: params[:resto_address]
+    restos = Resto.where(googleid: params[:name])
+    if restos.first
+      @resto = restos.first
+      redirect_to "/restos/#{@resto.id}"
+    else
+      @resto = Resto.new name: params[:name], googleid: params[:name], address: params[:name]
+      if @resto.save
+        redirect_to "/restos/#{@resto.id}"
+      else
+        render 'search'
+      end
+    end
   end
 
   def show
