@@ -1,5 +1,4 @@
-<h1>Restos#search</h1>
-<p>Find me in app/views/restos/search.html.erb</p>
+Recherchez le resto qui vous intéresse:
 
 <%= form_tag "/restos/create", method: "post" do %>
   <input type="text" name="name" value ="<% @resto.name %>"/>
@@ -8,5 +7,5 @@
   <p><%= @resto.errors[:address].first  %></p>
   <input type="hidden" name="googleid"/>
   <p><%= @resto.errors[:googleid].first  %></p>
-  <input type="submit" value="Ajoutez le resto"/>
+  <input type="submit" value="Recherche"/>
 <% end  %>
