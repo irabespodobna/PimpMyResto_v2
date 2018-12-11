@@ -35,27 +35,32 @@
         </select>
   </div>
 
+  <div class="budget">
     <label for="">Budget</label>
     <select name="budget_category_id">
       <% @budget_categories.each do |category| %>
         <option value="<%= category.id %>"><%= category.name %></option>
       <% end %>
     </select>
+  </div> 
 
+  <div class="distance">
     <label for="">Distance</label>
     <select name="distance_category_id">
       <% @distance_categories.each do |category| %>
         <option value="<%= category.id %>"><%= category.name %></option>
       <% end %>
     </select>
+  </div> 
 
+  <div class="frequence"> 
     <label for="">Frequence</label>
     <select name="frequency_category_id">
       <% @frequency_categories.each do |category| %>
         <option value="<%= category.id %>"><%= category.name %></option>
       <% end %>
     </select>
-
-    <input type="submit" value="Envoyez votre choix"/>
+  </div>
+    <input class="btn" type="submit" value="Envoyez votre choix"/>
   <% end %>
 </body>

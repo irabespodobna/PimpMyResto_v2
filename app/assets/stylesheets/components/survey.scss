@@ -68,4 +68,84 @@
 	margin-left: 400px
 }
 
+/* BUDGET DROPDOWN */
+.budget select {
+   border: 0;
+   color: #b0b2b2;
+   background: #f3c8ff;
+   font-size: 20px;
+   font-weight: bold;
+   padding: 2px 10px;
+   width: 240px;
+   *width: 280px;
+   *background: #b1d6ff;
+   -webkit-appearance: none;
+   display: inline;
+   float: right;
+   margin-right: 400px;
+}
 
+.budget label{
+	display: inline;
+	float: left;
+	margin-left: 400px
+}
+
+/* BUDGET DROPDOWN */
+.distance select {
+   border: 0;
+   color: #b0b2b2;
+   background: #c5c9ff;
+   font-size: 20px;
+   font-weight: bold;
+   padding: 2px 10px;
+   width: 240px;
+   *width: 280px;
+   *background: #b1d6ff;
+   -webkit-appearance: none;
+   display: inline;
+   float: right;
+   margin-right: 400px;
+}
+
+.distance label{
+	display: inline;
+	float: left;
+	margin-left: 400px
+}
+
+/* FREQUENCE DROPDOWN */
+.frequence select {
+   border: 0;
+   color: #b0b2b2;
+   background: #c5c9ff;
+   font-size: 20px;
+   font-weight: bold;
+   padding: 2px 10px;
+   width: 240px;
+   *width: 280px;
+   *background: #b1d6ff;
+   -webkit-appearance: none;
+   display: inline;
+   float: right;
+   margin-right: 400px;
+}
+
+.frequence label{
+	display: inline;
+	float: left;
+	margin-left: 400px
+}
+
+.btn {
+	 background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  margin-right: 50%;
+  margin-left: 50%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+	
+}
