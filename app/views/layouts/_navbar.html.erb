@@ -17,7 +17,6 @@
   <ul class="user">
     <% if user_signed_in? %>
     <div class="txt_devise"></div>
-      <p>Coucou, <%= current_user.email %>!</p>
       <p class="btn "><%= button_to "Sign out", destroy_user_session_path, :method => :delete %></p>
       <% else %>
       <div class='sign'>
