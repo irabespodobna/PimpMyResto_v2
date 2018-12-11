@@ -24,8 +24,9 @@ class AutocompletesController < ApplicationController
   # POST /autocompletes
   # POST /autocompletes.json
   def create
-    a = Resto.create name: params[:place_name], googleid: params[:place_id]
-    puts "#{a.errors}"
+    a = Resto.create name: params[:resto][:place_name], googleid: params[:resto][:place_id]
+    puts a.errors.inspect
+
   end
 
   # PATCH/PUT /autocompletes/1
