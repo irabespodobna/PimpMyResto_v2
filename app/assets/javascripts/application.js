@@ -176,3 +176,15 @@ $('#cody-info').hide();
 $(document).ready(function () {
  $('.stepper').mdbStepper();
 })
+
+
+
+
+
+// Progress Bar
+
+// Counter
+					jQuery('.statistic-counter').counterUp({
+							delay: 10,
+							time: 2000
+					});
