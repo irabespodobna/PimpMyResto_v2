@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   devise_for :users
   get '/', to: 'home#home'
   get '/browse', to: 'home#browse'
+  get '/team', to: 'home#team'
   get '/pimped', to: 'home#pimped'
   get '/survey', to: 'survey#survey'
   get '/survey/index', to: 'survey#index'
