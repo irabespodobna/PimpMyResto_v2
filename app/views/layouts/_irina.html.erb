@@ -1,9 +1,0 @@
-<%= form_tag '/foodstyle', method: 'post' do %>
-<input type="text" name="foodstyle_category_id"/>
-<select name="foodstyle_category_id">
-  <% @foodstyle_categories.each do |category| %>
-    <option value="<%= category.id %>"><%= category.name %></option>
-  <% end %>
-</select>
-<input type="submit" value="Ajouter un resto"/>
-<% end %>

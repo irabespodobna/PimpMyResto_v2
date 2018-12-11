@@ -19,8 +19,8 @@ class SurveyController < ApplicationController
   end
 
   def create
-    Survey.create foodstyle_category_id: params[:foodstyle_category_id], resto_id: params[:resto_id],  budget_category_id: params[:budget_category_id], distance_category_id: params[:distance_category_id], frequency_category_id: params[:frequency_category_id]
-    puts "/restos/#{params[:id]}"
+    a = Survey.create foodstyle_category_id: params[:foodstyle_category_id], resto_id: params[:resto_id],  budget_category_id: params[:budget_category_id], distance_category_id: params[:distance_category_id], frequency_category_id: params[:frequency_category_id]
+    puts a.errors.inspect
     redirect_to new_user_registration_path
   end
 

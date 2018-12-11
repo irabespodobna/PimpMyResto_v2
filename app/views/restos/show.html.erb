@@ -33,7 +33,7 @@
     <h3>Interested? Vote yourself for a new option at
       <%= @resto.name %></h3>
     <%= form_tag "/restos/#{params[:id]}", method: 'post' do %>
-    <input type="hidden" name="resto_id" value=<%= @resto.id %>/>
+    <input type="hidden" name="resto_id" value=<%= @resto.id %> />
 
     <select name="foodstyle_category_id">
       <% @foodstyle_categories.each do |category| %>
