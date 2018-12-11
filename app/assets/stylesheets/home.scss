@@ -1,0 +1,30 @@
+.home header{
+ background: url(vegan.jpg) no-repeat center center / cover;
+ height: 100%;
+ width: 100%;
+  margin: 0;
+  padding-top: 10px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.home .text{
+    position: absolute;
+    text-align: center;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Andale Mono;
+    font-style: bold;
+}
+
+.home p{
+    position: absolute;
+    text-align: justify;
+}
+
+.home #button{
+    text-align:center;
+    margin:auto;
+    padding: 520px;
+}
