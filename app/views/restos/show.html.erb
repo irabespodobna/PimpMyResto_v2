@@ -2,34 +2,38 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <script type="text/javascript" src="application.js"></script>
     <h1>Bienvenue to
       <%= @resto.name %></h1>
+
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
   </head>
 
   <body>
-    There are
-    <%= @num_votes %>
-    votes about
-    <%= @resto.name %>
-    :
+    <p>There are <%= @num_votes %> votes about <%= @resto.name %> :</p>
+<br>
     <p>
       <%= @num_vegan_votes %>
       voted for a vegan option!
     </p>
+      <br>
     <p>
       <%= @num_veggie_votes %>
-      voted for a veggie option!
+      voted for a végétarien option!
     </p>
+    <br>
     <p>
       <%= @num_gluten_votes %>
       voted for a gluten option!
     </p>
-
+<br>
     <h3>Interested? Vote yourself for a new option at
       <%= @resto.name %></h3>
     <%= form_tag "/restos/#{params[:id]}", method: 'post' do %>
-    <input type="hidden" name="resto_id" value=<%= @resto.id %>/>
+    <input type="hidden" name="resto_id" value=<%= @resto.id %> />
 
     <select name="foodstyle_category_id">
       <% @foodstyle_categories.each do |category| %>
@@ -42,25 +46,82 @@
       <button type="submit">Envoyez votre choix</button>
     <!--</form>-->
   <% end %>
-</body>
+
 
 <p>
   <a href="/restos">Retourner à l’index</a>
 </p>
 
 
-<% task_completion = (@num_votes.to_f / 250) * 100 %>
-<% task_completion_vegan = (@num_vegan_votes.to_f / 250) * 100 %>
-<% task_completion_veggie = (@num_veggie_votes.to_f / 250) * 100 %>
-<% task_completion_gluten = (@num_gluten_votes.to_f / 250) * 100 %>
+
+
+<!------ Include the above in your HEAD tag ---------->
+
+  <!-- Add this css in head tag -->
 
 
 
-<div class="progress" style="height:120px; margin-left:10%; margin-right:10%;">
-    <div class="progress-bar" role="progressbar" style="writing-mode:vertical-rl; text-orientation:sideways; width: <%= task_completion_vegan %>%" aria-valuenow="<%= task_completion_vegan %>" aria-valuemin="0" aria-valuemax="100" > <%= @num_vegan_votes %> Vegans</div>
-    <div class="progress-bar bg-success" role="progressbar" style="writing-mode:vertical-rl; text-orientation:sideways; width: <%= task_completion_veggie%>%" aria-valuenow="<%= task_completion_veggie %>" aria-valuemin="0" aria-valuemax="100"><%= @num_veggie_votes %> Veggies</div>
-    <div class="progress-bar bg-danger" role="progressbar" style="writing-mode:vertical-rl; text-orientation:sideways; width: <%= task_completion_gluten%>%" aria-valuenow="<%= task_completion_gluten %>" aria-valuemin="0" aria-valuemax="100" ><%= @num_gluten_votes %> Glutens</div>
-</div>
+     <!-- Here is the section -->
 
-<p>Votre vote fait parti des <%= task_completion %>% de gens ayant vote avec vous =]</p>
-<p>Au total, il y a <%= @num_votes %>/250 realises a ce jour !</p>
+      <section id="counter" class="counter">
+            <div class="main_counter_area">
+                <div class="overlay p-y-3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="main_counter_content text-center white-text wow fadeInUp">
+                                <div class="col-md-3">
+                                    <div class="single_counter p-y-2 m-t-1">
+                                        <i class="fas fa-leaf m-b-1"></i>
+                                        <br>
+                                        <p>Vegan</p>
+                                        <h2 class="statistic-counter"><%= @num_vegan_votes %></h2>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="single_counter p-y-2 m-t-1">
+                                        <i class="fas fa-dove m-b-1"></i>
+                                        <br>
+                                        <p>Végétariens</p>
+                                        <h2 class="statistic-counter"><%= @num_veggie_votes %></h2>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="single_counter p-y-2 m-t-1">
+                                        <i class="fab fa-pagelines m-b-1"></i>
+                                        <br>
+                                        <p>Gluten-free</p>
+                                        <h2 class="statistic-counter"><%= @num_gluten_votes %></h2>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="single_counter p-y-2 m-t-1">
+                                        <i class="fa fa-globe m-b-1"></i>
+                                        <br>
+                                        <p>Au total</p>
+                                        <h2 class="statistic-counter"><%= @num_votes %></h2>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End of counter Section -->
+
+
+<!-- Add this script before </body> -->
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+<script type="text/javascript">
+  jQuery('.statistic-counter').counterUp({
+      delay: 10,
+      time: 2000
+  });
+</script>

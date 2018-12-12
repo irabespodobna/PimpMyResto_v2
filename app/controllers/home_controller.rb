@@ -8,4 +8,7 @@ class HomeController < ApplicationController
 
     def pimped
     end
+
+    def team
+    end
 end

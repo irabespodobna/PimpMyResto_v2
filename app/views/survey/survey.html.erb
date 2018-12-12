@@ -6,9 +6,8 @@
   </head>
 
   <body>
-    
-    <label for="">Restaurant</label>
     <%= form_tag '/survey', method: 'post' do %>
+    <label for="">Restaurant</label>
     <select name="resto_id">
       <% @the_restos.each do |resto| %>
         <option value="<%= resto.id %>"><%= resto.name %></option>
