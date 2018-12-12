@@ -7,10 +7,14 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= render 'layouts/navbar' %>
+    
     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?libraries=places&key=#{ENV['GOOGLE_API_BROWSER_KEY']}&language=fr" %>
   </head>
 
+  <header>
+    <%= render 'layouts/navbar' %>
+  </header>
+  
   <body>
     <% if notice %>
       <p class="alert alert-success"><%= notice %></p>
