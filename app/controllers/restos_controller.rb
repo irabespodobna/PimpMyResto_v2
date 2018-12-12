@@ -8,12 +8,12 @@ class RestosController < ApplicationController
   end
 
   def create
-    restos = Resto.where(googleid: params[:name])
+    restos = Resto.where(googleid: params[:googleid])
     if restos.first
       @resto = restos.first
       redirect_to "/restos/#{@resto.id}"
     else
-      @resto = Resto.new name: params[:name], googleid: params[:name], address: params[:name]
+      @resto = Resto.new name: params[:name], googleid: params[:googleid], address: params[:name]
       if @resto.save
         redirect_to "/restos/#{@resto.id}"
       else
