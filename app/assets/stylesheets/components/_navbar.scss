@@ -5,7 +5,22 @@
   overflow: hidden;
   margin-left: 0;
   margin-top: 0;
+    .burger_menu{
+      display: none;
+    }
 }
+
+@media screen and (max-width: 400px){
+  .topnav {
+    .normal_menu{
+        display: none;
+      }
+      .burger_menu{
+        display: flex;
+      }
+  }
+}
+
 
 /* Style the links inside the navigation bar */
 .topnav a {

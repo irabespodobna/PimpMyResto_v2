@@ -18,3 +18,9 @@
 @import "bootstrap";
 @import "components/*";
 
+.layout {
+  height: 100vh;
+  .main{
+    overflow: auto;
+  }
+}
