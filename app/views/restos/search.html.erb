@@ -1,11 +1,11 @@
 Recherchez le resto qui vous intéresse:
 
 <%= form_tag "/restos/create", method: "post" do %>
-  <input type="text" name="name" value ="<% @resto.name %>"/>
+  <input type="text" name="name" value="<%@resto.name%>" id="autocomplete_name"/>
   <p><%= @resto.errors[:name].first  %></p>
   <input type="hidden" name="address"/>
   <p><%= @resto.errors[:address].first  %></p>
-  <input type="hidden" name="googleid"/>
+  <input type="hidden" name="googleid" id="googleid"/>
   <p><%= @resto.errors[:googleid].first  %></p>
   <input type="submit" value="Recherche"/>
 <% end  %>
