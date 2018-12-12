@@ -1,2 +1,3 @@
-GOOGLE_API_SERVER_KEY="AIzaSyBqn1xFYwiiKjcmlwP0srfjfRbtn2iS77Q"
-GOOGLE_API_BROWSER_KEY="AIzaSyBqn1xFYwiiKjcmlwP0srfjfRbtn2iS77Q"
+GOOGLE_API_SERVER_KEY:"AIzaSyBqn1xFYwiiKjcmlwP0srfjfRbtn2iS77Q"
+GOOGLE_API_BROWSER_KEY:"AIzaSyBqn1xFYwiiKjcmlwP0srfjfRbtn2iS77Q"
+foobar:test
