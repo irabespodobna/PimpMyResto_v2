@@ -1,4 +1,8 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
 <div class="topnav">
+  <a id="img_carrot"><%= link_to image_tag("carrot.png"), "/" %></a>
   <a><%= link_to "Take Action", restos_search_path%></a>
   <a> <%= link_to "Browse", restos_path%></a>
   <a><%= link_to "Pimped", pimped_path%></a>
@@ -8,7 +12,7 @@
   <ul class="user">
     <% if user_signed_in? %>
     <div class="txt_devise"></div>
-      <p class=" "><%= button_to "Sign out", destroy_user_session_path, :method => :delete %></p>
+      <p class=" "><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></p>
       <% else %>
       <div class='sign'>
       <a><%= link_to "Sign up", new_user_registration_path %></a>
