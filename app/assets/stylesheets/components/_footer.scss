@@ -1,12 +1,14 @@
 .footer {
-	opacity: .65;
+	opacity: 1;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: #e8e6e6;
-  padding: 7px 20px;
-  font-size: 13px;
+	padding-right: 30px;
+  padding-bottom: 7px;
+	padding-top: 7px;
+  font-size: 17px;
 }
 
 .footer a {
