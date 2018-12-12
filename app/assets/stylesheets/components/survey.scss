@@ -1,151 +1,187 @@
 
 /* RESTO DROPDOWN */
 .resto select {
+	position: relative;
+	top: 27px;
    border: 0;
-   color: #b0b2b2;
-   background: #f4bdff;
+   color: white;
+   background: #0d5d99;
    font-size: 20px;
    font-weight: bold;
-   padding: 2px 10px;
-   width: 240px;
+   padding: 4px 8px;
+   width: 280px;
    *width: 280px;
    *background: #b1d6ff;
    -webkit-appearance: none;
-   display: inline;
    float: right;
-   margin-right: 400px;
+   margin-right: 390px;
 }
 
 .resto label{
-	display: inline;
-	float: left;
-	margin-left: 400px
+	position: relative;
+	top: 70px;
+	margin-left: 130px;
+	font-family: Andale Mono;
+	font-size: 1.3em;
+	letter-spacing: 0.001px;
 }
 
 /* PREFERENCES DROPDOWN */
 .prefer select {
+	position: relative;
+	top: 77px;
    border: 0;
-   color: #b0b2b2;
-   background: #feb8be;
+   color: white;
+   background: #0d5d99;
    font-size: 20px;
    font-weight: bold;
-   padding: 2px 10px;
-   width: 240px;
+   padding: 4px 8px;
+   width: 280px;
    *width: 280px;
    *background: #b1d6ff;
    -webkit-appearance: none;
-    display: inline;
    float: right;
-   margin-right: 400px;
+   margin-right: 390px;
 }
 
 .prefer label{
-	display: inline;
+	position: relative;
+	top: 115px;
 	float: left;
-	margin-left: 400px
+	margin-left: 130px;
+	font-family: Andale Mono;
+	font-size: 1.3em;
+	letter-spacing: 0.001px;
 }
 
 /* MEAL CATEGORY DROPDOWN */
 .foodstyle select {
+	position: relative;
+	top: 124px;
    border: 0;
-   color: #b0b2b2;
-   background: #ffdec9;
+   color: white;
+   background: #0d5d99;
    font-size: 20px;
    font-weight: bold;
-   padding: 2px 10px;
-   width: 240px;
+   padding: 4px 8px;
+   width: 280px;
    *width: 280px;
    *background: #b1d6ff;
    -webkit-appearance: none;
    display: inline;
    float: right;
-   margin-right: 400px;
+   margin-right: 390px;
 }
 
 .foodstyle label{
-	display: inline;
+	position: relative;
+	top: 160px;
 	float: left;
-	margin-left: 400px
+	margin-left: 130px;
+	font-family: Andale Mono;
+	font-size: 1.3em;
+	letter-spacing: 0.001px;
 }
 
 /* BUDGET DROPDOWN */
 .budget select {
+   position: relative;
+	top: 166px;
    border: 0;
-   color: #b0b2b2;
-   background: #f3c8ff;
+   color: white;
+   background: #0d5d99;
    font-size: 20px;
    font-weight: bold;
-   padding: 2px 10px;
-   width: 240px;
+   padding: 4px 8px;
+   width: 280px;
    *width: 280px;
    *background: #b1d6ff;
    -webkit-appearance: none;
    display: inline;
    float: right;
-   margin-right: 400px;
+   margin-right: 330px;
 }
 
 .budget label{
-	display: inline;
+	position: relative;
+	top: 205px;
 	float: left;
-	margin-left: 400px
+	margin-left: 130px;
+	font-family: Andale Mono;
+	font-size: 1.3em;
+	letter-spacing: 0.001px;
 }
 
-/* BUDGET DROPDOWN */
+/* PROXIMITÉ DROPDOWN */
 .distance select {
+	position: relative;
+	top: 210px;
    border: 0;
-   color: #b0b2b2;
-   background: #c5c9ff;
+   color: white;
+   background: #0d5d99;
    font-size: 20px;
    font-weight: bold;
-   padding: 2px 10px;
-   width: 240px;
+   padding: 4px 8px;
+   width: 280px;
    *width: 280px;
    *background: #b1d6ff;
    -webkit-appearance: none;
    display: inline;
    float: right;
-   margin-right: 400px;
+   margin-right: 348px;
 }
 
 .distance label{
-	display: inline;
+	position: relative;
+	top: 250px;
 	float: left;
-	margin-left: 400px
+	margin-left: 130px;
+	font-family: Andale Mono;
+	font-size: 1.3em;
+	letter-spacing: 0.001px;
 }
 
 /* FREQUENCE DROPDOWN */
 .frequence select {
+	position: relative;
+	top: 277px;
+	display: inline-block;
    border: 0;
-   color: #b0b2b2;
-   background: #c5c9ff;
+   color: white;
+   background: #0d5d99;
    font-size: 20px;
    font-weight: bold;
-   padding: 2px 10px;
-   width: 240px;
+   padding: 4px 8px;
+   width: 280px;
    *width: 280px;
    *background: #b1d6ff;
    -webkit-appearance: none;
-   display: inline;
    float: right;
-   margin-right: 400px;
+   margin-right: 270px;
+   
 }
 
 .frequence label{
-	display: inline;
+	position: relative;
+	top: 285px;
 	float: left;
-	margin-left: 400px
+	margin-left: 130px;
+	font-family: Andale Mono;
+	font-size: 1.3em;
+	letter-spacing: 0.001px;
 }
 
-.btn {
-	 background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  margin-right: 50%;
-  margin-left: 50%;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+#btn {
+	position: absolute;
+	top: 659px;
+	margin: 0 auto;
+	background-color: #a8bedf; 
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+
 	
 }

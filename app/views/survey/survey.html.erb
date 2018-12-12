@@ -8,7 +8,7 @@
   <body>
     
   <div class="resto">
-    <label for="">Restaurant</label>
+    <label for="">1. Choisis ton restaurant :</label>
     <%= form_tag '/survey', method: 'post' do %>
     <select name="resto_id">
       <% @the_restos.each do |resto| %>
@@ -18,7 +18,7 @@
   </div>
 
   <div class="prefer">
-    <label for="">Preferences</label>
+    <label for="">2. Ton regime alimentaire :</label>
     <select name="foodstyle_category_id">
       <% @foodstyle_categories.each do |category| %>
         <option value="<%= category.id %>"><%= category.name %></option>
@@ -27,7 +27,7 @@
    </div>
     
   <div class="foodstyle">
-         <label for="">Repas</label>
+         <label for="">3. Quel est ton type de repas?</label>
         <select name="meal_category_id">
           <% @meal_categories.each do |category| %>
             <option value="<%= category.id %>"><%= category.name %></option>
@@ -36,7 +36,7 @@
   </div>
 
   <div class="budget">
-    <label for="">Budget</label>
+    <label for="">4. Combien dépsenses-tu pour un repas?</label>
     <select name="budget_category_id">
       <% @budget_categories.each do |category| %>
         <option value="<%= category.id %>"><%= category.name %></option>
@@ -45,7 +45,7 @@
   </div> 
 
   <div class="distance">
-    <label for="">Distance</label>
+    <label for="">5. Ta proximité avec ce restaurant :</label>
     <select name="distance_category_id">
       <% @distance_categories.each do |category| %>
         <option value="<%= category.id %>"><%= category.name %></option>
@@ -53,14 +53,15 @@
     </select>
   </div> 
 
+
   <div class="frequence"> 
-    <label for="">Frequence</label>
+    <label for="">6. À quelle fréquence vas-tu au restaurant?</label>
     <select name="frequency_category_id">
       <% @frequency_categories.each do |category| %>
         <option value="<%= category.id %>"><%= category.name %></option>
       <% end %>
     </select>
   </div>
-    <input class="btn" type="submit" value="Envoyez votre choix"/>
+    <input id="btn" type="submit" value="Envoyez votre choix"/>
   <% end %>
 </body>
