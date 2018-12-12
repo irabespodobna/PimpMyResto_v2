@@ -6,16 +6,6 @@
   </head>
 
   <body>
-    
-  <div class="resto">
-    <label for="">1. Choisis ton restaurant :</label>
-    <%= form_tag '/survey', method: 'post' do %>
-    <select name="resto_id">
-      <% @the_restos.each do |resto| %>
-        <option value="<%= resto.id %>"><%= resto.name %></option>
-      <% end %>
-    </select>
-  </div>
 
   <div class="prefer">
     <label for="">2. Ton regime alimentaire :</label>
@@ -53,7 +43,6 @@
     </select>
   </div> 
 
-
   <div class="frequence"> 
     <label for="">6. À quelle fréquence vas-tu au restaurant?</label>
     <select name="frequency_category_id">
@@ -61,6 +50,7 @@
         <option value="<%= category.id %>"><%= category.name %></option>
       <% end %>
     </select>
+
   </div>
     <input id="btn" type="submit" value="Envoyez votre choix"/>
   <% end %>
