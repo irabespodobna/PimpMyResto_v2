@@ -1,31 +1,5 @@
-
-
-
-<div class="topnav">
-  <div class="burger_menu">
-    <a id="img_carrot"><%= link_to image_tag("carrot.png"), "/" %></a>
-  </div>
-  <div class="normal_menu">
-    <a id="img_carrot"><%= link_to image_tag("carrot.png"), "/" %></a>
-    <a><%= link_to "Take Action", restos_search_path%></a>
-    <a> <%= link_to "Browse", restos_path%></a>
-    <a><%= link_to "Pimped", pimped_path%></a>
-
-
-  <ul class="user">
-    <% if user_signed_in? %>
-    <div class="txt_devise"></div>
-      <p class=" "><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></p>
-      <% else %>
-      <div class='sign'>
-      <a><%= link_to "Sign up", new_user_registration_path %></a>
-      <a><%= link_to "Sign in", new_user_session_path %></a>
-  </div>
-    <% end %>
-  </ul>
-  </div>
-</div>
-
+<!DOCTYPE html>
+<html>
 
 <nav class="navbar navbar-expand-md navbar-light bg-light">
   <div class="navbar-brand hidden-md-down"><%= link_to image_tag("carrot.png"), "/" %></div>
@@ -35,29 +9,32 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="nav-link" href="/survey">Take action</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+        <a class="nav-link" href="/restos">Browse</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+        <a class="nav-link" href="/pimped">Pimped</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+
+    <ul class="navbar-nav ml-auto">
+      <% if user_signed_in? %>
+      <li class="nav-item">   
+        <a class="nav-link"><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></a>
+      </li>
+      <% else %>
+
+      <li class="nav-item">
+        <a class="nav-link" href="/users/sign_in">Sign in</a>
+      </li>
+      <li class="nav-item">
+        <a id="signout" class="nav-link" href="/users/sign_up">Sign up</a>
+      </li>
+      <% end %>
+    </ul>
   </div>
 </nav>
+</html>
