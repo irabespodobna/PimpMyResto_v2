@@ -13,7 +13,7 @@
 
   </head>
 
-  <body>
+  <body id="encule">
     <p>There are <%= @num_votes %> votes about <%= @resto.name %> :</p>
 <br>
     <p>
@@ -44,7 +44,7 @@
 
 
     <!-- <form action="/users/sign_up"> -->
-      <button type="submit">Envoyez votre choix</button>
+      <button type="submit" class="btn btn-success">Envoyez votre choix</button>
     <!--</form>-->
   <% end %>
 
@@ -66,21 +66,17 @@
 
       <section id="counter" class="counter">
             <div class="main_counter_area">
-                <div class="overlay p-y-3">
-                    <div class="container">
-                        <div class="row">
-                            <div class="d-flex flex-wrap main_counter_content text-center white-text wow fadeInUp">
-                                <div class="col-md-3">
-                                    <div class="single_counter p-y-2 m-t-1">
+                            <div class="main_counter_content d-flex flex-wrap justify-content-around">
+                                <div class="p-2" style="width:100px;">
+                                    <div class="h-100 w-100 single_counter rounded">
                                         <i class="fas fa-leaf m-b-1"></i>
                                         <br>
                                         <p>Vegan</p>
                                         <h2 class="statistic-counter"><%= @num_vegan_votes %></h2>
-
                                     </div>
                                 </div>
-                                <div class="col-md-3">
-                                    <div class="single_counter p-y-2 m-t-1">
+                                <div class="p-2" style="width:100px;">
+                                    <div class="h-100 w-100 single_counter rounded">
                                         <i class="fas fa-dove m-b-1"></i>
                                         <br>
                                         <p>Végétariens</p>
@@ -88,8 +84,8 @@
 
                                     </div>
                                 </div>
-                                <div class="col-md-3">
-                                    <div class="single_counter p-y-2 m-t-1">
+                                <div class="p-2" style="width:100px;">
+                                    <div class="h-100 w-100 single_counter rounded">
                                         <i class="fab fa-pagelines m-b-1"></i>
                                         <br>
                                         <p>Gluten-free</p>
@@ -97,8 +93,8 @@
 
                                     </div>
                                 </div>
-                                <div class="col-md-3">
-                                    <div class="single_counter p-y-2 m-t-1">
+                                <div class="p-2" style="width:100px;">
+                                    <div class="h-100 w-100 single_counter rounded">
                                         <i class="fa fa-globe m-b-1"></i>
                                         <br>
                                         <p>Au total</p>
@@ -107,9 +103,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section><!-- End of counter Section -->
 

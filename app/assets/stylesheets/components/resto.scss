@@ -1,22 +1,41 @@
-body{
+#encule{
   text-align: center;
 }
 
 
-.p-y-2 {
-    padding: 50px;
-    border-radius: 10px;
-    margin: 10px;
+i{
+    margin-top: 10px;
 }
-.p-y-3 {
-    padding: 0px;
+    
+    
+    
+.p-2 {
 
+    margin-bottom: 3%;
+    
 }
-.m-b-1 {
-    margin-bottom: 20px;
+
+
+
+.bastard{
+    text-align: center;
+    margin-top: 5%;
 }
-.m-t-1 {
-    margin-top: 20px;
+
+
+.restos{
+    background-color: #539528;
+    margin: 10%;
+    height: 30px;
+
+    a {
+        color: #ddd;
+        text-decoration: none;
+        }
+        a:hover {
+        color: #aaa;
+        font-size: 3rem;
+        }
 }
 
 
@@ -44,3 +63,103 @@ body{
                 font-size:36px;
 
             }
+
+
+
+.title {
+   margin-top: 3%;
+   animation-duration: 3s;
+   animation-name: slidein;
+   font-size: 80px;
+   text-align: center;
+
+}
+
+@keyframes slidein {
+     from {
+   margin-left: 100%;
+   width: 300%;
+ }
+
+ to {
+   margin-left: 0%;
+   width: 100%;
+ }
+}
+
+
+
+.awesome {
+
+ font-family: futura;
+ font-style: italic;
+
+ width:100%;
+
+ margin: 0 auto;
+ text-align: center;
+
+ color:#313131;
+ font-size:45px;
+ font-weight: bold;
+
+ -webkit-animation:colorchange 20s infinite alternate;
+
+
+}
+
+@-webkit-keyframes colorchange {
+ 0% {
+
+   color: blue;
+ }
+
+ 10% {
+
+   color: #8e44ad;
+ }
+
+ 20% {
+
+   color: #1abc9c;
+ }
+
+ 30% {
+
+   color: #d35400;
+ }
+
+ 40% {
+
+   color: blue;
+ }
+
+ 50% {
+
+   color: #34495e;
+ }
+
+ 60% {
+
+   color: blue;
+ }
+
+ 70% {
+
+   color: #2980b9;
+ }
+ 80% {
+
+   color: #f1c40f;
+ }
+
+ 90% {
+
+   color: #2980b9;
+ }
+
+ 100% {
+
+   color: pink;
+ }
+}
