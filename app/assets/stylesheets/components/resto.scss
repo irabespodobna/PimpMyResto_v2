@@ -1,166 +1,185 @@
-
-i{
-    margin-top: 10px;
+i {
+  margin-top: 10px;
 }
-    
-    
-    
-.p-2 {
 
-    margin-bottom: 3%;
-    
+.p-2 {
+  margin-bottom: 3%;
 }
 
 #encule {
-    text-align: center;
+  text-align: center;
+}
+
+.bastard {
+  text-align: center;
+  margin-top: 5%;
+}
+
+.restos {
+  background-color: #539528;
+  border-radius: 10px;
+  margin: 10%;
+  height: 50px;
+
+  a {
+    color: #ddd;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #ddd;
+    font-size: 3rem;
+  }
+}
+
+//PAGE SEARCH
+
+
+div.masthead {
+  position: relative;
+  background-color: $gray-800;
+  background: url("plancha.jpg") no-repeat center center / cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  margin-top: 0;
+  text-align: center;
+  opacity: 0.6;
+
+  input[type=text] {
+  width: 200px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  height: 2em;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 100%;
+}
+
+  .overlay {
+    position: absolute;
+    background-color: $gray-900;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+  }
 }
 
 
-.bastard{
-    text-align: center;
-    margin-top: 5%;
+
+.features-icons {
+  margin-top: 1.5em;
+ .features-icons-item {
+   max-width: 20rem;
+   .features-icons-icon {
+     height: 3rem;
+     i {
+       font-size: 2.5rem;
+       color:#5394a9 !important;
+     }
+   }
+   &:hover {
+     .features-icons-icon {
+       i {
+         font-size: 3rem;
+       }
+     }
+   }
+ }
 }
-
-
-.restos{
-    background-color: #539528;
-    border-radius: 10px;
-    margin: 10%;
-    height: 50px;
-
-    a {
-        color: #ddd;
-        text-decoration: none;
-        }
-
-        a:hover {
-        color: #ddd;
-        font-size: 3rem;
-        }
-}
-
-
-
-
-
-
-
-            /*==========================================================
+/*==========================================================
                            counter section style
             ============================================================*/
+.main_counter_area {
+  background: url("https://images.pexels.com/photos/196288/pexels-photo-196288.jpeg?w=940&h=650&auto=compress&cs=tinysrgb") no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+}
 
-            .main_counter_area{
-                background: url(https://images.pexels.com/photos/196288/pexels-photo-196288.jpeg?w=940&h=650&auto=compress&cs=tinysrgb) no-repeat top center;
-                background-size: cover;
-                overflow: hidden;
-            }
-            .main_counter_area .main_counter_content .single_counter{
-                background: rgba(236, 72, 72, 0.5);
-                    color: #fff;
+.main_counter_area .main_counter_content .single_counter {
+  background: rgba(236, 72, 72, 0.5);
+  color: #fff;
+}
 
-
-            }
-            .main_counter_area .main_counter_content .single_counter i{
-                font-size:36px;
-
-            }
-
-
+.main_counter_area .main_counter_content .single_counter i {
+  font-size: 36px;
+}
 
 .title {
-   margin-top: 3%;
-   animation-duration: 3s;
-   animation-name: slidein;
-   font-size: 80px;
-   text-align: center;
-
+  margin-top: 3%;
+  animation-duration: 3s;
+  animation-name: slidein;
+  font-size: 80px;
+  text-align: center;
 }
-
 @keyframes slidein {
-     from {
-   margin-left: 100%;
-   width: 300%;
- }
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
 
- to {
-   margin-left: 0%;
-   width: 100%;
- }
+  to {
+    margin-left: 0;
+    width: 100%;
+  }
 }
-
-
 
 .awesome {
-
- font-family: futura;
- font-style: italic;
-
- width:100%;
-
- margin: 0 auto;
- text-align: center;
-
- color:#313131;
- font-size:45px;
- font-weight: bold;
-
- -webkit-animation:colorchange 20s infinite alternate;
-
-
+  font-family: futura;
+  font-style: italic;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #313131;
+  font-size: 45px;
+  font-weight: bold;
+  -webkit-animation: colorchange 20s infinite alternate;
 }
-
 @-webkit-keyframes colorchange {
- 0% {
+  0% {
+    color: blue;
+  }
 
-   color: blue;
- }
+  10% {
+    color: #8e44ad;
+  }
 
- 10% {
+  20% {
+    color: #1abc9c;
+  }
 
-   color: #8e44ad;
- }
+  30% {
+    color: #d35400;
+  }
 
- 20% {
+  40% {
+    color: blue;
+  }
 
-   color: #1abc9c;
- }
+  50% {
+    color: #34495e;
+  }
 
- 30% {
+  60% {
+    color: blue;
+  }
 
-   color: #d35400;
- }
+  70% {
+    color: #2980b9;
+  }
 
- 40% {
+  80% {
+    color: #f1c40f;
+  }
 
-   color: blue;
- }
+  90% {
+    color: #2980b9;
+  }
 
- 50% {
-
-   color: #34495e;
- }
-
- 60% {
-
-   color: blue;
- }
-
- 70% {
-
-   color: #2980b9;
- }
- 80% {
-
-   color: #f1c40f;
- }
-
- 90% {
-
-   color: #2980b9;
- }
-
- 100% {
-
-   color: pink;
- }
+  100% {
+    color: pink;
+  }
 }
