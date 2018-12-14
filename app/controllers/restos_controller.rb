@@ -26,6 +26,11 @@ class RestosController < ApplicationController
     @resto = Resto.find(params[:id])
     @the_restos = Resto.all
     @foodstyle_categories = FoodstyleCategory.all
+    @meal_categories = MealCategory.all
+    @budget_categories = BudgetCategory.all
+    @distance_categories = DistanceCategory.all
+    @frequency_categories = FrequencyCategory.all
+
 
     # To count a number of votes
     @surveys = @resto.surveys
