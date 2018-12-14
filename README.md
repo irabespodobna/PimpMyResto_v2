@@ -1,24 +1,12 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Le lien de notre belle app Heroku: https://pimpmyresto.herokuapp.com/
 
-Things you may want to cover:
+## :family: Voici notre super équipe :family: :
 
-* Ruby version
+Noms | Pseudo Slack
+------------ | -------------
+Pauline Labaisse | @Pauline Labaisse :baby_chick:
+Irina Penkovskaia | @Ira P. :octocat:
+Victor Gabella | @Chartie :bear:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*Enjoy*
