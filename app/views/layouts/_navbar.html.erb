@@ -10,7 +10,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="/survey">Take action</a>
+        <a class="nav-link" href="/users/sign_up">Take action</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/restos">Enquêtes déjà lancées</a>
@@ -18,18 +18,18 @@
     </ul>
 
     <ul class="navbar-nav ml-auto">
-      
-      <li class="nav-item">   
+
+      <li class="nav-item">
         <% if user_signed_in? %>
         <a class="nav-link"><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></a>
         <% else %>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="/users/sign_in">Créer un compte</a>
+        <a class="nav-link" href="/users/sign_in">Me connecter</a>
       </li>
       <li class="nav-item">
-        <a id="signout" class="nav-link" href="/users/sign_up">Me connecter</a>
+        <a id="signout" class="nav-link" href="/users/sign_up">Créer un compte</a>
       </li>
       <% end %>
     </ul>
