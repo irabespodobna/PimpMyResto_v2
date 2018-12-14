@@ -20,9 +20,9 @@ Les restaurants dans votre rue ne proposent que des assiettes de crudités comme
 
 ### Les atouts du projet :
 * Pour le public : Possibilité de proposer une changement/ Trouver des gens avec les mêmes préoccupations.
-*Pour les restaurateurs: Visibilité/ Augmentation du marché/ Advertising
+* Pour les restaurateurs: Visibilité/ Augmentation du marché/ Advertising
 
 ### Le marché :
-*Les 30% de la population française avec des intolérances et des allergies alimentaires.
-*Végétariens et vegans.
-*Régimes spéciaux.
+* Les 30% de la population française avec des intolérances et des allergies alimentaires.
+* Végétariens et vegans.
+* Régimes spéciaux.
