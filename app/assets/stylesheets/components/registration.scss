@@ -24,9 +24,11 @@ body {
 }
 
 .card-signin .card-img-left {
-  width: 45%;
+  width: 55%;
   background: scroll center url(signup.jpg);
   background-size: cover;
+  opacity: 0.5;
+  filter: alpha(opacity=50)
 }
 
 .card-signin .card-body {
