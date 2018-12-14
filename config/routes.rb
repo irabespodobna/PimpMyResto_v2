@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get '/', to: 'home#home'
   get '/browse', to: 'home#browse'
   get '/team', to: 'home#team'
+  get '/contact', to: 'home#contact'
   get '/pimped', to: 'home#pimped'
   get '/survey', to: 'survey#survey'
   get '/survey/index', to: 'survey#index'
