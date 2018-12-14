@@ -1,6 +1,6 @@
 
 ### Le lien de notre belle app Heroku: https://pimpmyresto.herokuapp.com/
-### Le lien de la presentation video:  
+### Le lien de la presentation video:  http://bitly.com/2PE8I4H
 
 ## Et voici notre superbe équipe
 
