@@ -11,6 +11,9 @@ i{
     
 }
 
+#encule {
+    text-align: center;
+}
 
 
 .bastard{
@@ -21,15 +24,17 @@ i{
 
 .restos{
     background-color: #539528;
+    border-radius: 10px;
     margin: 10%;
-    height: 30px;
+    height: 50px;
 
     a {
         color: #ddd;
         text-decoration: none;
         }
+
         a:hover {
-        color: #aaa;
+        color: #ddd;
         font-size: 3rem;
         }
 }
