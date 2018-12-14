@@ -21,7 +21,8 @@
 
       <li class="nav-item">
         <% if user_signed_in? %>
-        <a class="nav-link"><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></a>
+        <a class="nav-link"<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+          </a>
         <% else %>
       </li>
 
@@ -29,7 +30,7 @@
         <a class="nav-link" href="/users/sign_in">Me connecter</a>
       </li>
       <li class="nav-item">
-        <a id="signout" class="nav-link" href="/users/sign_up">Créer un compte</a>
+        <a class="nav-link" href="/users/sign_up">Créer un compte</a>
       </li>
       <% end %>
     </ul>
