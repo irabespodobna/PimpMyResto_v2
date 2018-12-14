@@ -3,32 +3,16 @@
   --input-padding-y: .75rem;
 }
 
-body {
-  background: #f5f6f7;
-}
-
-.d-block {
-  color: #495057;
-}
 .card-signin {
   border: 0;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
-  overflow: hidden;
 }
 
 .card-signin .card-title {
   margin-bottom: 2rem;
   font-weight: 300;
   font-size: 1.5rem;
-}
-
-.card-signin .card-img-left {
-  width: 55%;
-  background: scroll center url(signup.jpg);
-  background-size: cover;
-  opacity: 0.7;
-  filter: alpha(opacity=50)
 }
 
 .card-signin .card-body {
@@ -76,6 +60,7 @@ body {
   border-radius: .25rem;
   transition: all .1s ease-in-out;
 }
+
 
 .form-label-group input:not(:placeholder-shown) {
   padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
