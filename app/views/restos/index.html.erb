@@ -2,17 +2,17 @@
 
 <div class="bastard">
 
-<h1 class="title">Restaurants</h1>
+	<h1 class="title">Restaurants</h1>
 
-<h2 class="awesome">Les sélectionnés #Koh-lanta</h2>
+	<h2 class="awesome">Les sélectionnés #PimpMyResto</h2>
 
-<div>
-	<p >
-	<% @the_restos.each do |resto|  %>
-	</p>
-	<p class="restos">
-	  <a class="fas fa-dove m-b-1" href="/restos/<%= resto.id %>"><%= resto.name %></a>
-	<% end %>
-	</p>
+	<div>
+		<p >
+			<% @the_restos.each do |resto|  %>
+			</p>
+			<p class="restos">
+				<a class="fas fa-dove m-b-1" href="/restos/<%= resto.id %>"><%= resto.name %></a>
+			<% end %>
+		</p>
 	</div>
 </div>
