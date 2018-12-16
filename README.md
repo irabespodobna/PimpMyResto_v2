@@ -8,7 +8,7 @@
 | ----------------- | ------------------------------ |
 | Pauline Labaisse  | @Pauline Labaisse :baby_chick: |
 | Irina Penkovskaia | @Ira P. :octocat:              |
-| Victor Gabella    | @Chartie :bear:                |
+| Victor Gabella    | @Victorhebdo :bear:                |
 
 _Enjoy_
 
