@@ -43,9 +43,9 @@ class RestosController < ApplicationController
     @num_votes = @surveys.size
 
     # To count a number of votes for vegan/veggie/without_gluten options
-    vegan_id = 1
-    veggie_id = 2
-    without_gluten_id = 3
+    vegan_id = 4
+    veggie_id = 5
+    without_gluten_id = 6
 
     @num_vegan_votes = 0
     @num_veggie_votes = 0
