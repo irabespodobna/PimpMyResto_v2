@@ -8,6 +8,12 @@ class RestosController < ApplicationController
   end
 
   def create
+    if params[:googleid] == "undefined"
+      flash[:alert] = "Restaurant non trouvé sur Google Maps!"
+      @resto = Resto.new
+      render 'search'
+      return
+    end
     restos = Resto.where(googleid: params[:googleid])
     if restos.first
       @resto = restos.first
