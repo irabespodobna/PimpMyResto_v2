@@ -11,7 +11,6 @@ class SurveyController < ApplicationController
     # @spots = @client.spots(-33.8670522, 151.1957362, :types => ['restaurant','food'])
     # @names = @spots.collect { |spot| spot.name }
     # @print_restos = "spots #{@names} "
-
   end
 
   def index
@@ -32,7 +31,7 @@ class SurveyController < ApplicationController
       redirect_to "/restos/#{params[:resto_id]}"
       return
     end
-    survey = Survey.new foodstyle_category_id: params[:foodstyle_category_id], resto_id: params[:resto_id],  budget_category_id: params[:budget_category_id], distance_category_id: params[:distance_category_id], frequency_category_id: params[:frequency_category_id], user_id:  current_user.id
+    survey = Survey.new foodstyle_category_id: params[:foodstyle_category_id], resto_id: params[:resto_id], budget_category_id: params[:budget_category_id], distance_category_id: params[:distance_category_id], frequency_category_id: params[:frequency_category_id], user_id: current_user.id
     if survey.save
       flash[:success] = "Votre participation à bien été prise en compte!"
     else
@@ -40,5 +39,4 @@ class SurveyController < ApplicationController
     end
     redirect_to "/restos/#{params[:resto_id]}"
   end
-
 end

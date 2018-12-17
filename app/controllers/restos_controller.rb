@@ -37,7 +37,6 @@ class RestosController < ApplicationController
     @distance_categories = DistanceCategory.all
     @frequency_categories = FrequencyCategory.all
 
-
     # To count a number of votes
     @surveys = @resto.surveys
     @num_votes = @surveys.size
