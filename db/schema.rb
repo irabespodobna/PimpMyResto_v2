@@ -53,10 +53,6 @@ ActiveRecord::Schema.define(version: 2018_12_16_140935) do
   end
 
   create_table "surveys", force: :cascade do |t|
-    t.string "budget"
-    t.string "distance"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.integer "foodstyle_category_id"
     t.integer "resto_id"
     t.integer "user_id"
