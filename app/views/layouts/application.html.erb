@@ -17,9 +17,11 @@
       <div class='header'>
         <header><%= render 'layouts/navbar' %></header>
       </div>
-      <div><%= flash[:success] %></div>
-      <div><%= flash[:notice] %></div>
-      <div><%= flash[:alert] %></div>
+      <div>
+        <% flash.each do |name, msg| %>
+          <%= content_tag :div, msg, class: 'alert alert-info' %>
+        <% end %>
+      </div>
       <div class='main flex-grow-1'>
         <%= yield %>
       </div>
