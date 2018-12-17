@@ -8,6 +8,7 @@
 					<h5 class="card-title text-center">Renvoyer les instructions de confirmation</h5>
 					<form class="form-signin">
 
+
 						<div class="form-label-group">
 							<%= f.email_field :email, autofocus: true, autocomplete: "email", value: (resource.pending_reconfirmation? ? resource.unconfirmed_email : resource.email), :placeholder=>"Email", :class=>"form-control" %>
 						</div>
@@ -23,4 +24,3 @@
 		</div>
 	</div>
 </div>
-
