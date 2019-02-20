@@ -1,17 +1,5 @@
 ### Le lien de notre belle app Heroku: <https://pimpmyresto.herokuapp.com/>
 
-### Le lien de la presentation video:  <http://bitly.com/2PE8I4H>
-
-## Et voici notre superbe équipe
-
-| Noms              | Pseudo Slack                   |
-| ----------------- | ------------------------------ |
-| Pauline Labaisse  | @Pauline Labaisse :baby_chick: |
-| Irina Penkovskaia | @Ira P. :octocat:              |
-| Victor Gabella    | @Victorhebdo :bear:                |
-
-_Enjoy_
-
 ### PimpMyResto
 
 L’objectif de ce projet est de développer une plateforme d'agrégation de demandes du public qui possède un régime alimentaire spécial (intolérances, allergies, végétariens/vegans, etc.) pour faire évoluer l’offre des restaurants.
