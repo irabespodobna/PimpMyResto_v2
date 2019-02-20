@@ -1,4 +1,4 @@
-### Le lien de notre belle app Heroku: <https://pimpmyresto.herokuapp.com/>
+### Le lien de Heroku: <https://pimpmyresto.herokuapp.com/>
 
 ### PimpMyResto
 
