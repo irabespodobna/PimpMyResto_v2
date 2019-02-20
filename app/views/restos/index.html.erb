@@ -1,18 +1,9 @@
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<h2>Restaurants</h2>
 
-<div class="bastard">
-
-	<h1 class="title">Restaurants</h1>
-
-	<h2 class="awesome">Les sélectionnés #PimpMyResto</h2>
-
-	<div>
-		<p >
-			<% @the_restos.each do |resto|  %>
-			</p>
-			<p class="restos">
-				<a class="fas fa-dove m-b-1" href="/restos/<%= resto.id %>"><%= resto.name %></a>
-			<% end %>
-		</p>
-	</div>
-</div>
+<p>
+  <% @the_restos.each do |resto|  %>
+  </p>
+  <p>
+    <a href="/restos/<%= resto.id %>"><%= resto.name %></a>
+  <% end %>
+</p>

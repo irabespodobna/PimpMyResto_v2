@@ -1,69 +1,11 @@
-<link rel="stylesheet" href="https://zikula.github.io/bootstrap-docs/icons/" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<h1 class="mb-5">Recherche le resto qui t'intéresse:</h1>
 
-<div class="masthead text-white text-center">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-9 mx-auto">
-        <h1 class="mb-5">Recherche le resto qui t'intéresse:</h1>
-      </div>
-
-      <div class="w-100">
-        <div class="col-sm">
-          <%= form_tag "/restos/create", method: "post" do %>
-          <input class="rounded" type="text" name="name" placeholder="Choisis ton resto..." value="<%@resto.name%>" id="autocomplete_name"/>
-          <p><%= @resto.errors[:name].first %></p>
-          <input type="hidden" name="address"/>
-          <p><%= @resto.errors[:address].first %></p>
-          <input type="hidden" name="googleid" id="googleid"/>
-          <p><%= @resto.errors[:googleid].first %></p>
-        </div>
-        <div class="w-100">
-          <div class="col-sm">
-            <input class="btn btn-lg btn-outline-light" type="submit" value="Recherche"/>
-          </div>
-        </div>
-
-      <% end  %>
-    </div>
-
-  </div>
-</div>
-</div>
-
-<!-- Icons Grid -->
-<section class="features-icons text-center">
-<div class="container">
-  <div class="row">
-    <div class="col-lg-4">
-      <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-        <div class="features-icons-icon d-flex">
-          <i class="fas fa-map-pin m-auto text-success"></i>
-        </div>
-        <h3>Choisis ton resto</h3>
-        <p class="lead mb-0">Sélectionne un resto que tu apprécies mais où tu ne peux pas toujours manger</p>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-        <div class="features-icons-icon d-flex">
-          <i class="fas fa-bell m-auto text-success"></i>
-        </div>
-        <h3>Propose une action</h3>
-        <p class="lead mb-0">Participe à l'évolution du resto pour correspondre à tes attentes
-        </p>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-        <div class="features-icons-icon d-flex">
-          <i class="fas fa-child m-auto text-success"></i>
-        </div>
-        <h3>Sois comme Irina</h3>
-        <p class="lead mb-0">Apprécie des moments entre amis sans jamais être limité par ta volonté de manger</p>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
+<%= form_tag "/restos/create", method: "post" do %>
+<input class="rounded" type="text" name="name" placeholder="Choisis ton resto..." value="<%@resto.name%>" id="autocomplete_name"/>
+<p><%= @resto.errors[:name].first %></p>
+<input type="hidden" name="address"/>
+<p><%= @resto.errors[:address].first %></p>
+<input type="hidden" name="googleid" id="googleid"/>
+<p><%= @resto.errors[:googleid].first %></p>
+<input class="btn" type="submit" value="Recherche"/>
+<% end  %>
