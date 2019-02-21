@@ -2,6 +2,8 @@
 
 ### PimpMyResto
 
+46 % des Français souhaiteraient que les restaurants « classiques » proposent des plats vegan (sondage CHD EXPERT-2016). Il est donc primordial d'exposer aux futurs professionnels de la restauration toute l’importance de s’adapter aux nouvelles habitudes de consommation.
+
 L’objectif de ce projet est de développer une plateforme d'agrégation de demandes du public qui possède un régime alimentaire spécial (intolérances, allergies, végétariens/vegans, etc.) pour faire évoluer l’offre des restaurants.
 
 ### Description :
