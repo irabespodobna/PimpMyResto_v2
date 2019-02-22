@@ -1,0 +1,552 @@
+
+@font-face {
+                          font-family: "BelleroseLight";
+                          src: url('../fonts/Bellerose.ttf') format("truetype");
+                        }
+                        @font-face {
+                          font-family: "MicrosoftSansSerif";
+                          src: url('../fonts/Microsoft Sans Serif.ttf') format("truetype");
+                        }
+                        
+.homepage {
+  width               : 100%;
+/*  min-width           : 1024px;
+  height              : 100vh;
+  min-height          : 1564px;*/
+  position            : relative;
+  overflow            : hidden;
+  margin              : 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color    : rgba(255, 255, 255, 1.0);
+}
+a {
+  text-decoration     : none;
+}
+div {
+  -webkit-text-size-adjust: none;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+div {
+  -webkit-text-size-adjust: none;
+}
+.homepage .header {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 684px;
+  width               : 1027px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.homepage .header .carrotscucumberdelicious1640777 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0px;
+  height              : 684px;
+  width               : 1027px;
+  position            : absolute;
+  margin              : 0;
+  left                : 0px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  opacity             : 0.34;
+}
+.homepage .header .pimpmyresto {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 5.70%;
+  height              : 38.60%;
+  width               : 64.85%;
+  position            : absolute;
+  margin              : 0;
+  left                : 17.43%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.homepage .header .aidetonresto340351vo {
+  background-color    : rgba(255,255,255,0.0);
+  right               : 8.96%;
+  bottom              : 29.97%;
+  height              : 33.92%;
+  width               : 81.50%;
+  position            : absolute;
+  margin              : 0;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.homepage .header .line {
+  background-color    : rgba(255,255,255,0.0);
+  bottom              : 2.92%;
+  height              : 23.25%;
+  width               : 0.97%;
+  position            : absolute;
+  margin              : 0;
+  left                : 49.51%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.homepage .calltoaction {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 711px;
+  height              : 41px;
+  width               : 241px;
+  position            : absolute;
+  margin              : 0;
+  left                : 392px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.homepage .calltoaction .rectangle {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 100%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.homepage .calltoaction .lancetonenqu352te {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 4.88%;
+  height              : calc(0.00% + 27px);
+  width               : 70.95%;
+  position            : absolute;
+  margin              : 0;
+  left                : 13.69%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "AvenirNext-Regular", Helvetica, Arial, serif;
+  font-size           : 20.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  line-height         : 27.0px;
+}
+.homepage .choisistonresto {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 805px;
+  height              : 181px;
+  width               : 261px;
+  position            : absolute;
+  margin              : 0;
+  left                : 92px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.homepage .choisistonresto .choisistonresto1 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 32.04%;
+  height              : calc(0.00% + 49px);
+  width               : 72.80%;
+  position            : absolute;
+  margin              : 0;
+  left                : 9.58%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "BelleroseLight", Helvetica, Arial, serif;
+  font-size           : 24.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  line-height         : 57.0px;
+}
+.homepage .choisistonresto .s351lectionneunresto {
+  background-color    : rgba(255,255,255,0.0);
+  bottom              : 0%;
+  height              : calc(0.00% + 65px);
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "AvenirNext-Regular", Helvetica, Arial, serif;
+  font-size           : 15.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  line-height         : 20.0px;
+}
+.homepage .choisistonresto .directionsimplelineicons {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 32.04%;
+  width               : 19.92%;
+  position            : absolute;
+  margin              : 0;
+  left                : 36.02%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.homepage .proposeuneaction {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 805px;
+  height              : 158px;
+  width               : 280px;
+  position            : absolute;
+  margin              : 0;
+  left                : 370px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.homepage .proposeuneaction .participe340l351volut {
+  background-color    : rgba(255,255,255,0.0);
+  bottom              : 0%;
+  height              : calc(0.00% + 40px);
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "AvenirNext-Regular", Helvetica, Arial, serif;
+  font-size           : 15.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  line-height         : 20.0px;
+}
+.homepage .proposeuneaction .proposeuneaction1 {
+  background-color    : rgba(255,255,255,0.0);
+  bottom              : 32.28%;
+  height              : calc(0.00% + 49px);
+  width               : 67.86%;
+  position            : absolute;
+  margin              : 0;
+  left                : 16.07%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "BelleroseLight", Helvetica, Arial, serif;
+  font-size           : 24.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  line-height         : 57.0px;
+}
+.homepage .proposeuneaction .bellsimplelineicons {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 36.71%;
+  width               : 17.86%;
+  position            : absolute;
+  margin              : 0;
+  left                : 41.07%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.homepage .soiscommeirina {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 805px;
+  height              : 176px;
+  width               : 241px;
+  position            : absolute;
+  margin              : 0;
+  left                : 668px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.homepage .soiscommeirina .continuedevivre {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 32.39%;
+  height              : calc(0.00% + 49px);
+  width               : 78.84%;
+  position            : absolute;
+  margin              : 0;
+  left                : 10.58%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "BelleroseLight", Helvetica, Arial, serif;
+  font-size           : 24.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  line-height         : 57.0px;
+}
+.homepage .soiscommeirina .appr351ciedesmoments {
+  background-color    : rgba(255,255,255,0.0);
+  bottom              : 0.57%;
+  height              : calc(0.00% + 57px);
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "AvenirNext-Regular", Helvetica, Arial, serif;
+  font-size           : 15.0px;
+  color               : rgba(0, 0, 0, 1.0);
+  text-align          : center;
+  line-height         : 20.0px;
+}
+.homepage .soiscommeirina .handpeacefontawesome {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 32.39%;
+  width               : 20.33%;
+  position            : absolute;
+  margin              : 0;
+  left                : 39.83%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.homepage .restaurants {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 1060px;
+  height              : 450px;
+  width               : 726px;
+  position            : absolute;
+  margin              : 0;
+  left                : 144px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.homepage .restaurants .group {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 76.44%;
+  width               : 100%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.homepage .restaurants .group .anniespratt215756unsplash {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 100%;
+  width               : 31.82%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.homepage .restaurants .group .tylernix489782unsplash {
+  background-color    : rgba(255,255,255,0.0);
+  right               : 0%;
+  top                 : 0%;
+  height              : 100%;
+  width               : 31.82%;
+  position            : absolute;
+  margin              : 0;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.homepage .restaurants .group .brookelark194252unsplash {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 0%;
+  height              : 100%;
+  width               : 31.82%;
+  position            : absolute;
+  margin              : 0;
+  left                : 34.09%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.homepage .restaurants .group .numa311 {
+  background-color    : rgba(255,255,255,0.0);
+  bottom              : 5.23%;
+  height              : calc(0.00% + 49px);
+  width               : 30.72%;
+  position            : absolute;
+  margin              : 0;
+  left                : 0.96%;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "BelleroseLight", Helvetica, Arial, serif;
+  font-size           : 24.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  line-height         : 57.0px;
+}
+.homepage .restaurants .group .jumparena {
+  background-color    : rgba(255,255,255,0.0);
+  right               : 34.16%;
+  bottom              : 5.23%;
+  height              : calc(0.00% + 49px);
+  width               : 30.72%;
+  position            : absolute;
+  margin              : 0;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "BelleroseLight", Helvetica, Arial, serif;
+  font-size           : 24.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  line-height         : 57.0px;
+}
+.homepage .restaurants .group .numa {
+  background-color    : rgba(255,255,255,0.0);
+  right               : 0.14%;
+  bottom              : 5.23%;
+  height              : calc(0.00% + 49px);
+  width               : 30.72%;
+  position            : absolute;
+  margin              : 0;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "BelleroseLight", Helvetica, Arial, serif;
+  font-size           : 24.0px;
+  color               : rgba(255, 255, 255, 1.0);
+  text-align          : center;
+  line-height         : 57.0px;
+}
+.homepage .restaurants .p351titionsencourel {
+  background-color    : rgba(255,255,255,0.0);
+  right               : 9.92%;
+  bottom              : -0.22%;
+  height              : calc(0.00% + 114px);
+  width               : 79.34%;
+  position            : absolute;
+  margin              : 0;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+  font-family         : "BelleroseLight", Helvetica, Arial, serif;
+  font-size           : 40.0px;
+  color               : rgba(74, 73, 74, 1.0);
+  text-align          : center;
+  line-height         : 24.0px;
+}
+.homepage .restaurants .p351titionsencourel .span1 {
+  line-height         : 94.0px;
+}
+.homepage .restaurants .p351titionsencourel .span2 {
+  font-family         : "AvenirNext-UltraLight", Helvetica, Arial, serif;
+  font-size           : 24.0px;
+  line-height         : 33.0px;
+}
+.homepage .line2copy {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 775px;
+  height              : 3px;
+  width               : 954px;
+  position            : absolute;
+  margin              : 0;
+  left                : 43px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+.homepage .line2copy2 {
+  background-color    : rgba(255,255,255,0.0);
+  top                 : 1015px;
+  height              : 2px;
+  width               : 954px;
+  position            : absolute;
+  margin              : 0;
+  left                : 43px;
+  -ms-transform       : rotate(0deg); /* IE 9 */
+  -webkit-transform   : rotate(0deg); /* Chrome, Safari, Opera */
+  transform           : rotate(0deg);
+}
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 normal forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  -webkit-animation   : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  -moz-animation      : anima-reveal 0.3s ease-in 1 normal forwards;
+  -o-animation        : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  -webkit-animation-delay: 0;
+  -moz-animation-delay: 0;
+  -o-animation-delay  : 0;
+  animation-delay     : 0;
+}
+@-webkit-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-moz-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@-o-keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
+@keyframes anima-reveal {
+  0%
+   
+  {
+      opacity: 0;
+    }
+  
+    
+  100%
+   
+  {
+      opacity: 1;
+    }
+}
