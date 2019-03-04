@@ -1,0 +1,114 @@
+/******************* arrow ****************/
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+
+.footer2 #button{
+	width:35px;
+	height:35px;
+	border: rgba(#4f4f50, 0);
+	border-radius: 35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+
+.footer2 .image_footer {
+	filter: invert(100%);
+	width: 30px;
+	height: 30px;
+	transform: rotate(-90deg);
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.footer2:hover .image_footer {
+	filter: drop-shadow(2px 2px 10px red) invert(100%);
+	transform: rotate(90deg);
+}
+
+/******************* / arrow ****************/
+
+.footer2 img {
+	width: 5%;
+}
+
+.footer2 img:hover {
+	width: 8%;
+}
+
+.footer2 {
+	opacity: 1;
+	background-color: #F0F0F0;
+	box-shadow: 0px 0px 13px 0px;
+	padding-right: 30px;
+	padding-bottom: 7px;
+	font-size: 13px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+   	bottom:0;
+   	color: #000000;
+
+	position:fixed;
+    height: 0.1em;
+    overflow:hidden;
+    margin:0 auto;
+    padding-top: 1%;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+
+.footer2:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+}
+
+.footer #container{
+	margin-top:5px;
+	width:100%;
+	height:100%;
+	position:relative;
+	top:0;
+	left:0;
+	background-color: rgba(#e8e8e8, 0.2);
+}
+
+.footer3parties {
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer2 a {
+	float: left;
+	padding: .5em;
+	color : #000000;
+}
+
+.footer2 a:hover {
+	text-decoration: none;
+	background-color: #D8D8D8;
+	border-radius: 25px;
+	color: #000000;
+}
+
+.footerColone {
+	display: flex;
+	flex-direction: column;
+}
