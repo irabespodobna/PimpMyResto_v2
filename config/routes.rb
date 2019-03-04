@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   post 'restos/:id', to: 'survey#create'
 
   devise_for :users
-  get '/', to: 'home#home'
+  get '/', to: 'home#homeMargaux'
   get '/browse', to: 'home#browse'
   get '/team', to: 'home#team'
   get '/contact', to: 'home#contact'
