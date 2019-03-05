@@ -1,3 +1,4 @@
+@import "variables";
 /*!
  * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -6,8 +7,8 @@
  */
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
-  line-height: 1.15;
+/*  font-family: $PimpTextFont;
+*/  line-height: 1.15;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -137,7 +138,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif;
+  font-family: $PimpParagrapheFont;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
@@ -533,7 +534,7 @@ output {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: inherit;
+  font-family: $PimpTextFont !important;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;

@@ -1,69 +1,146 @@
-<link rel="stylesheet" href="https://zikula.github.io/bootstrap-docs/icons/" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<h1 class="mb-5">Recherche le resto qui t'intéresse:</h1>
 
-<div class="masthead text-white text-center">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row">
-      <div class="col-xl-9 mx-auto">
-        <h1 class="mb-5">Recherche le resto qui t'intéresse:</h1>
-      </div>
+<%= form_tag "/restos/create", method: "post" do %>
+<input class="rounded" type="text" name="name" placeholder="Choisis ton resto..." value="<%@resto.name%>" id="autocomplete_name"/>
+<p><%= @resto.errors[:name].first %></p>
+<input type="hidden" name="address"/>
+<p><%= @resto.errors[:address].first %></p>
+<input type="hidden" name="googleid" id="googleid"/>
+<p><%= @resto.errors[:googleid].first %></p>
+<input class="btn" type="submit" value="Recherche"/>
+<% end  %> 
 
-      <div class="w-100">
-        <div class="col-sm">
-          <%= form_tag "/restos/create", method: "post" do %>
-          <input class="rounded" type="text" name="name" placeholder="Choisis ton resto..." value="<%@resto.name%>" id="autocomplete_name"/>
-          <p><%= @resto.errors[:name].first %></p>
-          <input type="hidden" name="address"/>
-          <p><%= @resto.errors[:address].first %></p>
-          <input type="hidden" name="googleid" id="googleid"/>
-          <p><%= @resto.errors[:googleid].first %></p>
-        </div>
-        <div class="w-100">
-          <div class="col-sm">
-            <input class="btn btn-lg btn-outline-light" type="submit" value="Recherche"/>
-          </div>
-        </div>
 
-      <% end  %>
-    </div>
-
-  </div>
-</div>
-</div>
-
-<!-- Icons Grid -->
-<section class="features-icons text-center">
-<div class="container">
-  <div class="row">
-    <div class="col-lg-4">
-      <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-        <div class="features-icons-icon d-flex">
-          <i class="fas fa-map-pin m-auto text-success"></i>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="favicon.png" rel="shortcut icon"/>
+        <meta charset="utf-8"/>
+        <meta content="width=1024, maximum-scale=1.0" name="viewport"/>
+        <link href="./css/lancesTonEnquete.css" rel="stylesheet" type="text/css"/>
+        <meta content="Launchpad by Anima" name="author">
+        </meta>
+    </head>
+    <body style="margin: 0;
+ background: rgba(255, 255, 255, 1.0);">
+        <input id="anPageName" name="page" type="hidden" value="lancestonenquete"/>
+        <div class="lancestonenquete">
+            <div style="width: 1024px; height: 100%; position:relative; margin:auto;">
+                <img anima-src="lances-ton-enquete-benjamin-ranger-770022-unsplash.png" class="benjaminranger770022unsplash" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                <a href="numae.html">
+                    <div class="recherche">
+                        <div class="calltoactioncopy">
+                            <div class="rectangle">
+                            </div>
+                            <div class="restou2026">
+                                Resto …
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="choisistonrestaura">
+                    <span class="span1">Choisis </span><span class="span2">ton</span><span class="span3"> restaurant</span>
+                </div>
+                <a href="petitionencour.html">
+                    <div class="restaurants">
+                        <div class="group">
+                            <img anima-src="lances-ton-enquete-annie-spratt-215756-unsplash.png" class="anniespratt215756unsplash" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                            <img anima-src="lances-ton-enquete-tyler-nix-489782-unsplash.png" class="tylernix489782unsplash" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                            <img anima-src="lances-ton-enquete-brooke-lark-194252-unsplash.png" class="brookelark194252unsplash" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                            <div class="numa311">
+                                NUMAÉ
+                            </div>
+                            <div class="jumparena">
+                                JUMP ARENA
+                            </div>
+                            <div class="numa">
+                                NUMA
+                            </div>
+                        </div>
+                        <div class="p351titionsencourel">
+                            <span class="span1">Pétitions en cour<br /></span><span class="span2">Elles n’attendent plus que toi</span>
+                        </div>
+                    </div>
+                </a>
+                <img anima-src="lances-ton-enquete-line-2-copy-2@3x.png" class="line2copy2" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+            </div>
         </div>
-        <h3>Choisis ton resto</h3>
-        <p class="lead mb-0">Sélectionne un resto que tu apprécies mais où tu ne peux pas toujours manger</p>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-        <div class="features-icons-icon d-flex">
-          <i class="fas fa-bell m-auto text-success"></i>
-        </div>
-        <h3>Propose une action</h3>
-        <p class="lead mb-0">Participe à l'évolution du resto pour correspondre à tes attentes
-        </p>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-        <div class="features-icons-icon d-flex">
-          <i class="fas fa-child m-auto text-success"></i>
-        </div>
-        <h3>Sois comme Irina</h3>
-        <p class="lead mb-0">Apprécie des moments entre amis sans jamais être limité par ta volonté de manger</p>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
+        <!-- Scripts -->
+        <script>
+            anima_isHidden = function(e) {
+                if (!(e instanceof HTMLElement)) return !1;
+                if (getComputedStyle(e).display == "none") return !0; else if (e.parentNode && anima_isHidden(e.parentNode)) return !0;
+                return !1;
+            };
+            anima_loadAsyncSrcForTag = function(tag) {
+                var elements = document.getElementsByTagName(tag);
+                var toLoad = [];
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var src = e.getAttribute("src");
+                    var loaded = (src != undefined && src.length > 0 && src != 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+                    if (loaded) continue;
+                    var asyncSrc = e.getAttribute("anima-src");
+                    if (asyncSrc == undefined || asyncSrc.length == 0) continue;
+                    if (anima_isHidden(e)) continue;
+                    toLoad.push(e);
+                }
+                toLoad.sort(function(a, b) {
+                    return anima_getTop(a) - anima_getTop(b);
+                });
+                for (var i = 0; i < toLoad.length; i++) {
+                    var e = toLoad[i];
+                    var asyncSrc = e.getAttribute("anima-src");
+                    e.setAttribute("src", asyncSrc);
+                }
+            };
+            anima_pauseHiddenVideos = function(tag) {
+                var elements = document.getElementsByTagName("video");
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var isPlaying = !!(e.currentTime > 0 && !e.paused && !e.ended && e.readyState > 2);
+                    var isHidden = anima_isHidden(e);
+                    if (!isPlaying && !isHidden && e.getAttribute("autoplay") == "autoplay") {
+                        e.play();
+                    } else if (isPlaying && isHidden) {
+                        e.pause();
+                    }
+                }
+            };
+            anima_loadAsyncSrc = function(tag) {
+                anima_loadAsyncSrcForTag("img");
+                anima_loadAsyncSrcForTag("iframe");
+                anima_loadAsyncSrcForTag("video");
+                anima_pauseHiddenVideos();
+            };
+            var anima_getTop = function(e) {
+                var top = 0;
+                do {
+                    top += e.offsetTop || 0;
+                    e = e.offsetParent;
+                } while (e);
+                return top;
+            };
+            anima_loadAsyncSrc();
+            anima_old_onResize = window.onresize;
+            anima_new_onResize = undefined;
+            anima_updateOnResize = function() {
+                if (anima_new_onResize == undefined || window.onresize != anima_new_onResize) {
+                    anima_new_onResize = function(x) {
+                        if (anima_old_onResize != undefined) anima_old_onResize(x);
+                        anima_loadAsyncSrc();
+                    };
+                    window.onresize = anima_new_onResize;
+                    setTimeout(function() {
+                        anima_updateOnResize();
+                    }, 3000);
+                }
+            };
+            anima_updateOnResize();
+            setTimeout(function() {
+                anima_loadAsyncSrc();
+            }, 200);
+        </script>
+        <!-- End of Scripts -->
+    </body>
+</html>

@@ -1,31 +1,30 @@
 <div class="footer2">
-	<div class="container">
+<!-- 	<div id="button"><%= image_tag 'arrow.png', :class => 'image_footer'%></div>
+ -->		<div class="container">
+				<div class="footer3parties">
+					
+					<div class="footerColone">
+						<% if user_signed_in? %>
+							<%= link_to "Editer profil", edit_user_registration_path %>
+							<%= link_to "Se déconnecter", destroy_user_session_path, :method => :delete %>
+							<%= link_to image_tag("radish.png"), "/" %>
+						<% else %>
+							<%= link_to "Inscris toi", new_user_session_path %>
+							<%= link_to "Connecte toi", new_user_registration_path %>
+							<%= link_to image_tag("radish.png"), "/" %>
+						<% end %>	
+					</div>
+					
+					<div class="footerColone">
+						<a href="/users/sign_up" style="color:#D15851">Lances ton enquête</a>
+						<a href="/restos">Enquêtes déjà lancées</a>
+					</div>
 
-			<div class="footer3parties">
-				
-				<div class="footerColone">
-					<% if user_signed_in? %>
-						<%= link_to "Editer profil", edit_user_registration_path %>
-						<%= link_to "Se déconnecter", destroy_user_session_path, :method => :delete %>
-						<%= link_to image_tag("radish.png"), "/" %>
-					<% else %>
-						<%= link_to "Inscris toi", new_user_session_path %>
-						<%= link_to "Connecte toi", new_user_registration_path %>
-						<%= link_to image_tag("radish.png"), "/" %>
-					<% end %>	
+					<div class="footerColone">
+						<a href="/contact">Contact</a>
+						<a href="/team">L'équipe</a>
+						<a href="#">Mentions légales</a>
+					</div>
 				</div>
-				
-				<div class="footerColone">
-					<a href="/users/sign_up" style="color:#D15851">Lances ton enquête</a>
-					<a href="/restos">Enquêtes déjà lancées</a>
-				</div>
-
-				<div class="footerColone">
-					<a href="/contact">Contact</a>
-					<a href="/team">L'équipe</a>
-					<a href="#">Mentions légales</a>
-				</div>
-			</div>
-
-	</div>
+		</div>
 </div>

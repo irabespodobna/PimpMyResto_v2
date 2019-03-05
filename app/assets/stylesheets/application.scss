@@ -17,10 +17,6 @@
 
 @import "font-awesome";
 @import "components/*";
+@import "variables";
 
-.layout {
-  height: 100vh;
-  .main{
-    overflow: auto;
-  }
-}
+/*@import "variables";*/
