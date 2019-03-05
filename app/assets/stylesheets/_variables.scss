@@ -1,0 +1,49 @@
+@import url(//db.onlinewebfonts.com/c/b9098bae684de3978d5959ed7a232e09?family=Bellerose);
+@import url(//db.onlinewebfonts.com/c/f3df85918e3f1ba8a7b13be9b47882ce?family=Avenir+Next);
+@import url(//db.onlinewebfonts.com/c/b5ed933057eaf1919dd79d81248cdbce?family=Avenir+Next+LT+Pro);
+
+/******* COLOR ********/
+
+$cedarchest:#D25A4A;
+$cedarchesthover:#a53d30;
+
+/*SAUMON*/
+$boutonEnquete:#D15851;
+$boutonEnqueteHover:#AD3B35;
+
+/******** FONT ********/
+$PimpParagrapheFont:'Bellerose', sans-serif;
+$PimpTextFont: 'Avenir Next', Helvetica;
+$PimpTextLightFont: 'Avenir Next LT Pro', Helvetica;
+
+/* FONT KAWAZE TITLE */
+/*$kawazefont2: 'Questrial', roboto mono, sans-serif;*/
+
+/******** BUTTON BOOTSTRAP********/
+ .btn {
+    font-family: $PimpParagrapheFont;
+    &-primary{
+    background-color: $boutonEnquete;
+    border-color: $boutonEnquete;
+    box-shadow: 5px 10px 8px #888888;
+        &:hover{
+        background-color: $boutonEnqueteHover;
+        border-color: $boutonEnqueteHover;
+        box-shadow: 3px 7px 2px #888888;
+        }
+        &:focus{
+        outline: none;
+        }
+        &:active{
+        outline: none;
+        }
+    }
+    /*&-warning{
+    background-color: $saffron;
+    border-color: $saffron;
+        &:hover{
+        background-color: $saffron_hover;
+        border-color: $saffron_hover;
+        }
+    }*/
+}
