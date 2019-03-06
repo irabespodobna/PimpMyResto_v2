@@ -1,5 +1,3 @@
-### Le lien de Heroku: <https://pimpmyresto.herokuapp.com/>
-
 ### PimpMyResto
 
 46 % des Français souhaiteraient que les restaurants « classiques » proposent des plats vegan (sondage CHD EXPERT-2016). Il est donc primordial d'exposer aux futurs professionnels de la restauration toute l’importance de s’adapter aux nouvelles habitudes de consommation.
