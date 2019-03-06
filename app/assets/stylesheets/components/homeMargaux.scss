@@ -25,12 +25,18 @@
 }
 
 .middleText {
-	margin-top: 0;
+	margin-top: 3%;
 	font-family: $PimpTextFont;
 }
 
 .toplogo {
 	margin-bottom: -5%;
+}
+
+.toplogo2{
+	display: flex;
+	align-items: center;
+	margin-bottom: 2%;
 }
 
 .accroche {
@@ -40,7 +46,7 @@
 }
 
 .arrowHome {
-	margin: 2%;
+	margin: 4%;
 	width: auto;
 }
 
@@ -74,4 +80,13 @@ hr {
 .ThreeCommentsTitle {
 	font-family: $PimpParagrapheFont;
 	font-size: 160%;
+}
+ 
+/******************* RESPONSIVE WEB SITE **********************/
+
+
+@media all and (max-width: 1000px) and (min-width: 700px) {
+  .class {
+   margin:40%;
+  }
 }
