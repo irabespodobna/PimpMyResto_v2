@@ -1,23 +1,14 @@
+@import "variables";
+
 /******************* arrow ****************/
 
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
-
-.footer2 {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-align-content: center;
-  align-content: center;
-}
-
-.footer2 #button{
+.footer #button{
 	width:35px;
 	height:35px;
-	border: rgba(#F0F0F0, 0);
+	border: rgba(#4f4f50, 0);
 	border-radius: 35px;
-	position:fixed;
 	margin:0 auto;
+	position:relative;
 	-webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -26,9 +17,7 @@
 }
 
 
-.footer2 .image_footer {
-	position: fixed;
-  	bottom: 0;
+.footer .image_footer {
 	filter: invert(100%);
 /*	width: 30px;
 */	height: 30px;
@@ -40,13 +29,117 @@
     transition: all 1s ease;
 }
 
-.footer2:hover .image_footer {
+.footer:hover .image_footer {
 	transform: rotate(90deg);
 }
 
 /******************* / arrow ****************/
 
-.footerSquare img {
+/******************* bouton ACCUEIL ****************/
+
+.radish {
+
+}
+
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 2.8rem;
+    overflow:hidden;
+    margin:0 auto;
+    padding-top: 1%;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+	font-family: $PimpTextFont;
+
+	p {
+	color: #000000;
+	margin-bottom: 0px !important;
+	font-size: 1em;
+	}
+
+	a{
+	color: #000000;
+	font-size: 1em;
+	}
+
+	a:hover {
+	text-decoration: none;
+	font-size: 1.08em;
+	color: #7d7c7c;
+	border-radius: 25px;
+	}
+
+}
+
+
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+}
+
+
+.footer #container{
+	margin-top:5px;
+	width:100%;
+	height:100%;
+	position:relative;
+	top:0;
+	left:0;
+	background-color: #F0F0F0;
+	box-shadow: 0px 0px 13px 0px;
+	text-align:center;
+}
+
+.footer #cont{
+	/*position:relative;*/
+	bottom: 0;
+	top:-45px;
+	right:190px;
+	width:150px;
+	height:auto;
+/*	display: flex;
+	align-items: center;
+	justify-content: center;*/
+}
+
+
+.footer_center{
+	width:100%;
+	float:left;
+  	text-align:center;
+}
+
+/******************* MY VERSION ****************/
+
+.footerColone {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 1rem;
+}
+
+.textleft {
+	display: flex;
+	flex-direction: column;
+	padding-left: 30%;
+	text-align: left;
+}
+
+/******************* / MY VERSION ****************/
+
+
+/*.footerSquare img {
 	width: 5%;
 }
 
@@ -62,7 +155,6 @@
 	padding-bottom: 7px;
 	font-size: 13px;
     left: 0;
-    bottom: 0;
     width: 100%;
     overflow: hidden;
    	bottom:0;
@@ -114,7 +206,7 @@
 }
 
 .footerSquare a {
-	/*float: left;*/
+	float: left;
 	padding: .5em;
 	color : #000000;
 }
@@ -124,9 +216,6 @@
 	background-color: #D8D8D8;
 	border-radius: 25px;
 	color: #000000;
-}
+}*/
 
-.footerColone {
-	display: flex;
-	flex-direction: column;
-}
+
