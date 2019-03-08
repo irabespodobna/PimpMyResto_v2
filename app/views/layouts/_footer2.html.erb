@@ -15,8 +15,8 @@
 							<%= link_to "Se déconnecter", destroy_user_session_path, :method => :delete %>
 							<a href="/">Accueil</a>
 						<% else %>
-							<b style="font-size:130%;"><%= link_to "Inscris toi", new_user_session_path %></b>
-							<%= link_to "Connecte toi", new_user_registration_path %>
+							<b style="font-size:130%;"><%= link_to "Inscris toi",  new_user_registration_path %></b>
+							<%= link_to "Connecte toi", new_user_session_path %>
 							<div class="radish">
 								<!-- <%= link_to image_tag("radish.png"), "/" %> -->
 								<a href="/">Accueil</a>
