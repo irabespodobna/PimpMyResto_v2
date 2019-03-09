@@ -34,9 +34,27 @@
 }
 
 .toplogo2{
-	display: flex;
+	text-align: center;
+	margin-bottom: 2%;
+	display: table;
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.toplogo1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+/*	display: flex;
 	align-items: center;
 	margin-bottom: 2%;
+	display: table;
+	max-width: 100%;
+	height: auto;
+	display: block;*/
 }
 
 .accroche {
