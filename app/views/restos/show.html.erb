@@ -12,21 +12,53 @@
     <header>
       <div class="topshow">
         
+<!--------------------------- NAME RESTAURANT ---------------------------->        
         <h1><%= @resto.name %></h1>
           <p>Il y a <%= @num_votes %> votes pour <%= @resto.name %> :</p>
 
-            <p>Vegan</p>
-            <h2 class="statistic-counter"><%= @num_vegan_votes %></h2>
+<!--------------------------- / NAME RESTAURANT ---------------------------->          
 
-            <p>Végétarien</p>
-            <h2 class="statistic-counter"><%= @num_veggie_votes %></h2>
+<!--------------------------- TOTAUX ---------------------------->
+          <div class="d-flex justify-content-around">
+          <!-- <div class="petitionVVG"> -->
+            <div class="container">
+              <div class="row">
+               
+                  <div class="col-md-3 feature-center">
+                    <div class="feature block">
+                      <div class="fondVegan">
+                        <p>Vegan <%= @num_vegan_votes %></p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-3 feature-center">
+                    <div class="feature block">
+                      <div class="fondVegetarien">
+                        <p>Végétarien <%= @num_veggie_votes %></p>
+                      </div>
+                    </div>
+                  </div>
 
-            <p>Sans gluten</p>
-            <h2 class="statistic-counter"><%= @num_gluten_votes %></h2>
+                  <div class="col-md-3 feature-center">
+                    <div class="feature block">
+                      <div class="fondGluten">
+                        <p>Sans gluten <%= @num_gluten_votes %></p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                <div class="col-md-3 feature-center">
+                  <div class="feature block">
+                    <p>Au total <%= @num_votes %></p>
+                  </div>
+                </div>
 
-            <p>Au total</p>
-            <h2 class="statistic-counter"><%= @num_votes %></h2>
-
+              </div>
+            </div>
+          </div>
+            
+<!--------------------------- / TOTAUX ---------------------------->
 
 <!--------------------------- ESSAY FORM ---------------------------->
         <div class="main flex-grow-1">
