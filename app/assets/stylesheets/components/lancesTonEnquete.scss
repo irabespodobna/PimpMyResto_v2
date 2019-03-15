@@ -28,6 +28,12 @@
   display: flex;
   text-align: center;
   color: #000000;
+  font-family: $PimpParagrapheFont;
+}
+
+.TitreLTE {
+  font-family: $PimpParagrapheFont;
+  font-size: 3rem;
 }
 
 .LaRechercheContainer{
@@ -40,6 +46,16 @@
 .rechercheButtons {
   display: flex;
   flex-direction: row;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.rechercheButtons .btn {
+  border: 2px solid #eeeeee;
+  border-radius: 2px;
+    &:hover {
+      background-color: #eeeeee;
+    }
 }
 
 .rounded {
