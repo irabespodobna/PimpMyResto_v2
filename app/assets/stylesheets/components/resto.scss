@@ -48,6 +48,17 @@
   	box-shadow: 0 10px 3px -6px #888888;
 }
 
+.fontResult {
+	width: 200px;
+	height: 100px;
+	font-size:20px;
+	color: black;
+	line-height:100px;
+	text-align:center;
+	background: #D9D8D9;
+	border-radius: 100px / 50px;	
+}
+
 /* Features */
 
 #features {
@@ -65,6 +76,9 @@
 
 .feature-center {
     text-align: center;
+    display: flex;
+  	align-items: center;
+  	justify-content: center;
 }
 
 .feature-center .feature-icon {
