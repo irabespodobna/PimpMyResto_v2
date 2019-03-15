@@ -1,65 +1,104 @@
 <!DOCTYPE html>
 <html lang="fr">
+
   <head>
     <meta charset="utf-8">
-    <h1><%= @resto.name %></h1>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>PimpMyResto <%= @resto.name %></title>
   </head>
-    <p>Il y a
-      <%= @num_votes %>
-      votes pour
-      <%= @resto.name %>
-      :</p>
-      <p>Vegan</p>
-      <h2 class="statistic-counter"><%= @num_vegan_votes %></h2>
+    
+    <header>
+      <div class="topshow">
+        
+        <h1><%= @resto.name %></h1>
+          <p>Il y a <%= @num_votes %> votes pour <%= @resto.name %> :</p>
 
-      <p>Végétarien</p>
-      <h2 class="statistic-counter"><%= @num_veggie_votes %></h2>
+            <p>Vegan</p>
+            <h2 class="statistic-counter"><%= @num_vegan_votes %></h2>
 
-      <p>Sans gluten</p>
-      <h2 class="statistic-counter"><%= @num_gluten_votes %></h2>
+            <p>Végétarien</p>
+            <h2 class="statistic-counter"><%= @num_veggie_votes %></h2>
 
-      <p>Au total</p>
-      <h2 class="statistic-counter"><%= @num_votes %></h2>
+            <p>Sans gluten</p>
+            <h2 class="statistic-counter"><%= @num_gluten_votes %></h2>
 
-    <h3>Intéréssé(e) ? Vote pour une nouvelle option pour
-      <%= @resto.name %></h3>
-    <%= form_tag "/restos/#{params[:id]}", method: 'post' do %>
-    <input type="hidden" name="resto_id" value=<%= @resto.id %>/>
+            <p>Au total</p>
+            <h2 class="statistic-counter"><%= @num_votes %></h2>
 
 
-    <select name="foodstyle_category_id">
-      <% @foodstyle_categories.each do |category| %>
-        <option value="<%= category.id %>"><%= category.name %></option>
-      <% end %>
-    </select>
+<!--------------------------- ESSAY FORM ---------------------------->
+        <div class="main flex-grow-1">
+          <div class="container">
+            <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+              <div class="card card-signin my-5">
+                <div class="card-body">
 
-    <label for="">Repas</label>
-    <select name="meal_category_id">
-      <% @meal_categories.each do |category| %>
-        <option value="<%= category.id %>"><%= category.name %></option>
-      <% end %>
-    </select>
+                  <h3 class="card-title text-center">Intéréssé ? <br />
+                    Vote pour une nouvelle option</h3>
+                    <hr class="my-4" style="margin-bottom:2%;margin-top:2%;">
 
-    <label for="">Budget</label>
-    <select name="budget_category_id">
-      <% @budget_categories.each do |category| %>
-        <option value="<%= category.id %>"><%= category.name %></option>
-      <% end %>
-    </select>
+                    <%= form_tag "/restos/#{params[:id]}", method: 'post' do %>
+                    <input type="hidden" name="resto_id" value=<%= @resto.id %>/>
 
-    <label for="">Distance</label>
-    <select name="distance_category_id">
-      <% @distance_categories.each do |category| %>
-        <option value="<%= category.id %>"><%= category.name %></option>
-      <% end %>
-    </select>
+                    <div class="form-label-group">
+                      <select class="form-control" name="foodstyle_category_id">
+                        <% @foodstyle_categories.each do |category| %>
+                          <option value="<%= category.id %>"><%= category.name %></option>
+                        <% end %>
+                      </select>
+                    </div>
 
-    <label for="">Frequence</label>
-    <select name="frequency_category_id">
-      <% @frequency_categories.each do |category| %>
-        <option value="<%= category.id %>"><%= category.name %></option>
-      <% end %>
-    </select>
+                    <div class="form-label-group">
+                      <!-- <label for="">Repas</label> -->
+                      <select class="form-control" name="meal_category_id">
+                        <% @meal_categories.each do |category| %>
+                          <option value="<%= category.id %>"><%= category.name %></option>
+                        <% end %>
+                      </select>
+                    </div>
 
-    <button type="submit" class="btn btn-success">Envoie ton choix</button>
-  <% end %>
+                    <div class="form-label-group">
+                      <!-- <label for="">Budget</label> -->
+                      <select class="form-control" name="budget_category_id">
+                        <% @budget_categories.each do |category| %>
+                          <option value="<%= category.id %>"><%= category.name %></option>
+                        <% end %>
+                      </select>
+                    </div>
+
+                    <div class="form-label-group">
+                      <!-- <label for="">Distance</label> -->
+                      <select class="form-control" name="distance_category_id">
+                        <% @distance_categories.each do |category| %>
+                          <option value="<%= category.id %>"><%= category.name %></option>
+                        <% end %>
+                      </select>
+                    </div>
+
+                    <div class="form-label-group">
+                      <!-- <label for="">Frequence</label> -->
+                      <select class="form-control" name="frequency_category_id">
+                        <% @frequency_categories.each do |category| %>
+                          <option value="<%= category.id %>"><%= category.name %></option>
+                        <% end %>
+                      </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-lg btn btn-secondary btn-block">Envoie ton choix</button>
+                    <% end %>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>     
+<!--------------------------- ESSAY FORM ---------------------------->
+
+      </div>
+    </header>
+
+  <body></body>
+
+</html>
