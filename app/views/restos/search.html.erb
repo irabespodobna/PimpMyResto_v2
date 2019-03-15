@@ -16,13 +16,13 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">                         
-                                    <h1 class="mb-5">Recherche le resto qui t'intéresse:</h1>
+                                    <p class="TitreLTE">Choisi <b style="font-size:3rem">TON</b> resto:</p>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="LaRechercheContainer">
                                         <div class="rechercheButtons">
                                             <%= form_tag "/restos/create", method: "post" do %>
-                                            <input class="rounded" type="text" name="name" placeholder="Choisis ton resto..." value="<%@resto.name%>" id="autocomplete_name"/>
+                                            <input class="rounded" type="text" name="name" placeholder="Resto..." value="<%@resto.name%>" id="autocomplete_name"/>
                                         </div>
                                         <div class="d-none d-md-block">
                                             <div class="rechercheButtons">
