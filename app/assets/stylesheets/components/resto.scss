@@ -107,7 +107,6 @@
 	text-align: center;
 	font-family: $PimpParagrapheFont;
 	margin-bottom: -1.3%;
-	font-size: 5%;
     font-size: 2.7em;
 }
 
@@ -130,6 +129,55 @@
 
 
 
+/********************* INDEX PART ***************************/
+
+
+.titleResto {
+	font-family: $PimpParagrapheFont;
+	/*margin-bottom: 2em;*/
+    font-size: 2.7em;
+}
+
+@media(max-width: 1580px) {
+  .titleResto {
+    font-size: 2.7em; /* Fine tune unbehaved elements */
+  }
+}
+@media(max-width: 768px) {
+  .titleResto {
+    font-size: 2em;
+  }
+}
+@media(max-width: 360px) {
+  .titleResto {
+    font-size: 1.7em;
+  }
+}
+
+.sousTitleResto {
+	font-family: $PimpParagrapheFont;
+	margin-bottom: 2em;
+	font-size: 2em;
+}
+@media(max-width: 1580px) {
+  .sousTitleResto {
+    font-size: 2em; /* Fine tune unbehaved elements */
+  }
+}
+@media(max-width: 768px) {
+  .sousTitleResto {
+    font-size: 1.5em;
+  }
+}
+@media(max-width: 360px) {
+  .sousTitleResto {
+    font-size: 1em;
+  }
+}
+
+.cardResto {
+	font-family: $PimpTextLightFont;
+}
 
 
 

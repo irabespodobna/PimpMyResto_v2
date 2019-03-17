@@ -8,15 +8,49 @@
 			<title>Accueil PimpMyResto</title>
 	</head>
 	
-
 	<body>
 
-		<h2>Restaurants</h2>
+<!--------------------------- RESTAURANTS ---------------------------->          
+		<header>
+      		<div class="topshow">
 
-		<p><% @the_restos.each do |resto|  %></p>
-		<p><a href="/restos/<%= resto.id %>"><%= resto.name %></a>
-		<% end %>
-		</p>
+				<div class="titleResto">
+					<span style="color: white;">Liste</span> des Petitions <br>
+				</div>
+				<div class="sousTitleResto">Aide nous à aller jusqu’au bout de nos envies</div>
+				
+
+				<div class="d-flex justify-content-center flex-wrap">
+					<% @the_restos.each do |resto|  %>
+						<div class="card" style="width: 18rem;">
+						  <div class="card-body">
+						    <a class="cardResto" href="/restos/<%= resto.id %>"><%= resto.name %></a>
+						  </div>
+						</div>
+					<% end %>
+				</div>
+
+			</div>
+		</header>
+<!--------------------------- / RESTAURANTS ---------------------------->          
+
+<!--------------------------- SERCH BUTTON ---------------------------->
+
+    <div class="boxRecherche">
+      <p class="BonheurAilleur">Ton Bonheur est ailleur ?</p>
+        <div class="backShowResearchButton">
+            <a href="/users/sign_up" class="buttonHomePage">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-12">
+                          <button type="button" class="btn btn-primary btn-lg">Lance ton enquête</button>
+                      </div>
+                  </div>
+              </div>
+            </a>
+        </div>
+    </div>
+<!--------------------------- / SERCH BUTTON ---------------------------->
 
 	</body>
 </html>
