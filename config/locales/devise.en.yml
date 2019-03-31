@@ -60,5 +60,5 @@ en:
       not_found: "pas trouvé"
       not_locked: "comme non verrouillé"
       not_saved:
-        one: "1 erreur a empêché l'enregistrement de cette %{ressource}:"
-        other: "%{count} erreurs ont empêché cette %{ressource} d'être sauvegardée:"
+        one: "1 erreur a empêché l'enregistrement de cette %{resource}:"
+        other: "%{count} erreurs ont empêché cette %{resource} d'être sauvegardée:"
